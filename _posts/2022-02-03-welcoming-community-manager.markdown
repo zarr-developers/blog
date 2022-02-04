@@ -37,10 +37,26 @@ better tomorrow. I also believe that in open-source, individual contributions do
 Zarr seemed like a perfect place for me to work on what I believe. I think being a young project Zarr needed someone with experience in handling and working with the
 communities. 
 
+>Thanking CZI
+
+[Chan Zuckerberg Initiative](https://chanzuckerberg.com/) was founded in 2015 to help solve some of society’s toughest challenges - from eradicating diseases and improving
+education, to addressing the needs of our local communities. The founding [annual letter](https://chanzuckerberg.com/about/letter-to-max/) from the founders of CZI is worth a
+read as it highlights compelling thoughts on how working collaboratively towards a better tomorrow is everyone’s moral responsibility.
+
+The [EOSS](https://chanzuckerberg.com/eoss/) is one of the CZI’s divisions that supports the maintenance, growth, development and community engagement of critical open source
+tools. In total there have been 4 funding cycles for EOSS and [Zarr](https://zarr.dev/) has been the recipient of grants in the [1st](https://chanzuckerberg.com/eoss/proposals/scalable-storage-of-tensor-data-for-scientific-computing/) and [4th](https://chanzuckerberg.com/eoss/proposals/zarr-a-common-backbone-for-the-scalable-storage-of-annotated-tensor-data/) cycles. The 1st cycle was led by [Ryan Williams](https://github.com/ryan-williams) and 4th by [Josh Moore](https://github.com/joshmoore). The community manager position is being funded by EOSS’s 4th funding cycle. [More about the funding](https://chanzuckerberg.com/newsroom/czi-awards-16-million-for-foundational-open-source-software-tools-essential-to-biomedicine/).
+
+I’d like to wholeheartedly thank CZI for considering Zarr as one of the Essential Open Source Software for Science. Zarr has been a crucial open-source software for scalable
+storage of data for medical, scientific and enterprise applications. Utilising the resources from CZI we’d ensure to match the standards w.r.t. to the needs of the community
+while being language agnostic along with transparency and reproducibility.
+
+>Hobbies & Interests
 
 Apart from technical and community engagements I love to read sci-fi, cosmology and fantasy books. I’m also a huge Marvel fan(comics and movies). I like thrillers, horror,
 sci-fi and fantasy movies and T.V. shows. I’m blessed to be not far from the magnificent Himalayas and go on mountain treks a few times a year. To keep up with my trekking
 fitness, I run and cycle.
+
+>Roadmap
 
 It’s more than a week since I officially joined Zarr as a community manager. I have been talking regularly with the steering council, reading about the project, going through
 the Github repos and have planned a few things for upcoming months:
