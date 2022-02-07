@@ -1,0 +1,48 @@
+---
+layout: post
+title:  "Zarr Python 2.11 Release"
+date:   2022-02-07
+categories: blog
+permalink: /release-2-11/
+---
+
+Version 2.11 of the [Python Zarr
+package](https://zarr.readthedocs.io/en/stable/), has just been released. This
+post provides an overview of new features in this release, especially a new
+parameter that may impact the performance of writing arrays.
+
+## Empty chunks will no longer be written by default
+
+One of the advantages of the Zarr format is that it is sparse, which means that
+chunks with no data (more precisely, with data equal to the fill value, which
+is usually 0) don't need to be written to disk at all. They will simply be
+assumed to be empty at read time. However, until this release, the Zarr library
+would write these empty chunks to disk anyway. This changes in this version: a
+small performance penalty at write time leads to significant speedups at read
+time and in filesystem operations in the case of sparse arrays. To revert to
+the old behavior, pass the argument ``write_empty_chunks=True`` to the array
+creation function.
+
+## Fancy numpy-style indexing
+
+ Zarr arrays now support NumPy-style fancy indexing with arrays of integer
+ coordinates. This is equivalent to using zarr.Array.vindex. Mixing slices and
+ integer arrays is not supported.
+
+## New base class
+
+This release of Zarr Python introduces a new ``BaseStore`` class that all
+provided store classes implemented in Zarr Python now inherit from. This is
+done as part of refactoring to enable future support of the Zarr version 3
+spec. Existing third-party stores that are a MutableMapping (e.g. dict) can be
+converted to a new-style key/value store inheriting from ``BaseStore`` by
+passing them as the argument to the new ``zarr.storage.KVStore`` class. For
+backwards compatibility, various higher-level array creation and convenience
+functions still accept plain Python dicts or other mutable mappings for the
+``store`` argument, but will internally convert these to a ``KVStore``.
+
+## More information
+
+Details on these features as well as the full list of all changes in 2.11.0
+are available on the release notes:
+https://zarr.readthedocs.io/en/stable/release.html#release-2-11-0
