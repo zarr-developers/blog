@@ -36,19 +36,27 @@ With the new default of `write_empty_chunks_False`, writing the fill-valued
 chunk is *much* faster while writing a randomly-filled chunk is slightly
 slower.
 
-->The benchmark snippet will go here!
-
 ## Fancy numpy-style indexing
 
 Zarr arrays now support NumPy-style fancy indexing with arrays of integer
 coordinates. This is equivalent to using ``zarr.Array.vindex``. Mixing slices and
 integer arrays are not supported.
 
+```
+    >>> z.vindex[[0, 2], [1, 3]]
+    array([-1, -2])
+    >>> z.vindex[[0, 2], [1, 3]] = [-3, -4]
+    >>> z[:]
+    array([[ 0, -3,  2,  3,  4],
+           [ 5,  6,  7,  8,  9],
+           [10, 11, 12, -4, 14]])
+    >>> z[[0, 2], [1, 3]]
+    array([-3, -4])
+```
+
+See [Advanced indexing](https://zarr.readthedocs.io/en/stable/tutorial.html#advanced-indexing) in the tutorial for more information.
+
 This feature was added by [Juan Nunez-Iglesias](https://github.com/jni) with PR [#725](https://github.com/zarr-developers/zarr-python/issues/725).
-
-Here's a code snippet:
-
-->Code snippet goes here!
 
 ## New base class
 
@@ -62,12 +70,10 @@ backwards compatibility, various higher-level array creation and convenience
 functions still accept plain Python dicts or other mutable mappings for the
 ``store`` argument, but will internally convert these to a ``KVStore``.
 
-This feature was added by [Greggory Lee](https://github.com/grlee77) with PR [#839](https://github.com/zarr-developers/zarr-python/issues/839), [#789](https://github.com/zarr-developers/zarr-python/issues/789) and [#950](https://github.com/zarr-developers/zarr-python/issues/950).
-
-Here's a code snippet:
-
-->Code snippet goes here!
-
+This feature was added by [Greggory Lee](https://github.com/grlee77) with PR
+[#839](https://github.com/zarr-developers/zarr-python/issues/839),
+[#789](https://github.com/zarr-developers/zarr-python/issues/789) and
+[#950](https://github.com/zarr-developers/zarr-python/issues/950).
 
 ## More information
 
