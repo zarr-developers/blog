@@ -11,7 +11,7 @@ Version 2.11 of the [Python Zarr package](https://zarr.readthedocs.io/en/stable/
 This blog post aims to provide an overview of new features in this release, especially a new parameter that may impact the performance of writing arrays.
 
 
->### Empty chunks will no longer be written by default
+### Empty chunks will no longer be written by default
 
 One of the advantages of the Zarr format is that it is sparse, which means that
 chunks with no data (more precisely, with data equal to the fill value, which
@@ -23,9 +23,18 @@ time and in filesystem operations in the case of sparse arrays. To revert to
 the old behaviour, pass the argument ``write_empty_chunks=True`` to the array
 creation function.
 
-This feature was added by [Davis Bennett](https://github.com/jni) and [Juan Nunez-Iglesias](https://github.com/jni) with PR [#738](https://github.com/zarr-developers/zarr-python/issues/738) and [#853](https://github.com/zarr-developers/zarr-python/issues/853) respectively.
+This feature was added by [Davis Bennett](https://github.com/jni) and [Juan Nunez-Iglesias](https://github.com/jni)
+with PR [#738](https://github.com/zarr-developers/zarr-python/issues/738) and [#853](https://github.com/zarr-developers/zarr-python/issues/853) respectively.
 
-Here are some benchmarks:
+Some preliminary benchmark results are shown in [PR 853](https://github.com/zarr-developers/zarr-python/pull/853#issuecomment-988245713). For example,
+
+![benchmark results](https://user-images.githubusercontent.com/3805136/145100731-95ea83c5-da54-4950-8849-4df157c1a081.png)
+
+shows how with the previous setting of `write_empty_chunks=True` the speed of
+writing a fill-valued chunk is the same as writing a randomly-filled chunk.
+With the new default of `write_empty_chunks_False`, writing the fill-valued
+chunk is *much* faster while writing a randomly-filled chunk is slightly
+slower.
 
 ->The benchmark snippet will go here!
 
