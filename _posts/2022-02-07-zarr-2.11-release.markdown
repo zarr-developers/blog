@@ -26,7 +26,7 @@ creation function.
 This feature was added by [Davis Bennett](https://github.com/jni) and [Juan Nunez-Iglesias](https://github.com/jni)
 with PR [#738](https://github.com/zarr-developers/zarr-python/issues/738) and [#853](https://github.com/zarr-developers/zarr-python/issues/853) respectively.
 
-Some preliminary benchmark results are shown in [PR 853](https://github.com/zarr-developers/zarr-python/pull/853#issuecomment-988245713). For example,
+Some preliminary benchmark results are shown in PR [#853](https://github.com/zarr-developers/zarr-python/pull/853#issuecomment-988245713). For example:
 
 ![benchmark results](https://user-images.githubusercontent.com/3805136/145100731-95ea83c5-da54-4950-8849-4df157c1a081.png)
 
