@@ -1,0 +1,100 @@
+---
+layout: post
+title:  "Zarr Python 2.11 Release"
+date:   2022-02-07
+categories: blog
+permalink: /release-2-11/
+---
+
+Version 2.11 of the [Python Zarr package](https://zarr.readthedocs.io/en/stable/) has just been released. 🎉 
+
+This blog post aims to provide an overview of new features in this release, especially a new parameter that may impact the performance of writing arrays.
+
+
+## Empty chunks will no longer be written by default
+
+One of the advantages of the Zarr format is that it is sparse, which means that
+chunks with no data (more precisely, with data equal to the fill value, which
+is usually 0) don't need to be written to disk at all. They will simply be
+assumed to be empty at read time. However, until this release, the Zarr library
+would write these empty chunks to disk anyway. This changes in this version: a
+small performance penalty at write time leads to significant speedups at read
+time and in filesystem operations in the case of sparse arrays. To revert to
+the old behaviour, pass the argument ``write_empty_chunks=True`` to the array
+creation function.
+
+This feature was added by [Davis Bennett](https://github.com/jni) and [Juan Nunez-Iglesias](https://github.com/jni)
+with PR [#738](https://github.com/zarr-developers/zarr-python/issues/738) and [#853](https://github.com/zarr-developers/zarr-python/issues/853) respectively.
+
+Some preliminary benchmark results are shown in PR [#853](https://github.com/zarr-developers/zarr-python/pull/853#issuecomment-988245713). For example:
+
+![benchmark results](https://user-images.githubusercontent.com/3805136/145100731-95ea83c5-da54-4950-8849-4df157c1a081.png)
+
+shows how with the previous setting of `write_empty_chunks=True` the speed of
+writing a fill-valued chunk is the same as writing a randomly-filled chunk.
+With the new default of `write_empty_chunks_False`, writing the fill-valued
+chunk is *much* faster while writing a randomly-filled chunk is slightly
+slower.
+
+## Fancy numpy-style indexing
+
+Zarr arrays now support NumPy-style fancy indexing with arrays of integer
+coordinates. This is equivalent to using ``zarr.Array.vindex``. Mixing slices and
+integer arrays are not supported.
+
+```
+    >>> z.vindex[[0, 2], [1, 3]]
+    array([-1, -2])
+    >>> z.vindex[[0, 2], [1, 3]] = [-3, -4]
+    >>> z[:]
+    array([[ 0, -3,  2,  3,  4],
+           [ 5,  6,  7,  8,  9],
+           [10, 11, 12, -4, 14]])
+    >>> z[[0, 2], [1, 3]]
+    array([-3, -4])
+```
+
+See [Advanced indexing](https://zarr.readthedocs.io/en/stable/tutorial.html#advanced-indexing) in the tutorial for more information.
+
+This feature was added by [Juan Nunez-Iglesias](https://github.com/jni) with PR [#725](https://github.com/zarr-developers/zarr-python/issues/725).
+
+## New base class
+
+This release of Zarr Python introduces a new ``BaseStore`` class that all
+provided store classes implemented in Zarr Python now inherit from. This is
+done as part of refactoring to enable future support of the Zarr version 3
+spec. Existing third-party stores that are a MutableMapping (e.g. dict) can be
+converted to a new-style key/value store inheriting from ``BaseStore`` by
+passing them as the argument to the new ``zarr.storage.KVStore`` class. For
+backwards compatibility, various higher-level array creation and convenience
+functions still accept plain Python dicts or other mutable mappings for the
+``store`` argument, but will internally convert these to a ``KVStore``.
+
+This feature was added by [Greggory Lee](https://github.com/grlee77) with PR
+[#839](https://github.com/zarr-developers/zarr-python/issues/839),
+[#789](https://github.com/zarr-developers/zarr-python/issues/789) and
+[#950](https://github.com/zarr-developers/zarr-python/issues/950).
+
+## More information
+
+Details on these features as well as the full list of all changes in 2.11.0 are available on the release notes. Check [here](https://zarr.readthedocs.io/en/stable/release.html#release-2-11-0).
+
+## Appreciation 🙌🏻
+
+Shout-out to all the contributors who made release 2.11.0 possible: 
+- [Juan Nunez-Iglesias](https://github.com/jni) 
+- [Davis Bennett](https://github.com/d-v-b) 
+- [Gregory Lee](https://github.com/grlee77) 
+- [Ryan Abernathy](https://github.com/rabernat) 
+- [Matthias Bussonnier](https://github.com/Carreau) 
+- [Oren Watson](https://github.com/orenwatson) 
+- [Joe Hamman](https://github.com/jhamman) 
+- [Dimitri Papadopoulos Orfanos](https://github.com/DimitriPapadopoulos) 
+- [Ray Bell](https://github.com/raybellwaves) 
+- [John Kirkham](https://github.com/jakirkham) 
+- [Mads R. B. Kristensen](https://github.com/madsbk) 
+- [Josh Moore](https://github.com/joshmoore).
+
+If you find the above features useful and end up using them, please mention [@zarr_dev](https://twitter.com/zarr_dev) on Twitter and tweet using #ZarrData and we'll make sure to get it featured! ✌🏻
+
+~Sanket Verma
