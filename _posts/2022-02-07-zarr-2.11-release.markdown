@@ -23,8 +23,7 @@ time and in filesystem operations in the case of sparse arrays. To revert to
 the old behaviour, pass the argument ``write_empty_chunks=True`` to the array
 creation function.
 
-This feature was added by [Juan Nunez-Iglesias](https://github.com/jni) and [Davis Bennett](https://github.com/jni) with PR [#853](https://github.com/zarr-developers/zarr-python/issues/853) and [#738](https://github.com/zarr-developers/zarr-python/issues/738)
-respectively.
+This feature was added by [Davis Bennett](https://github.com/jni) and [Juan Nunez-Iglesias](https://github.com/jni) with PR [#738](https://github.com/zarr-developers/zarr-python/issues/738) and [#853](https://github.com/zarr-developers/zarr-python/issues/853) respectively.
 
 Here are some benchmarks:
 
