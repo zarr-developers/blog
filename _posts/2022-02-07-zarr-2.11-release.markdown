@@ -79,7 +79,7 @@ This feature was added by [Greggory Lee](https://github.com/grlee77) with PR
 
 Details on these features as well as the full list of all changes in 2.11.0 are available on the release notes. Check [here](https://zarr.readthedocs.io/en/stable/release.html#release-2-11-0).
 
->Appreciation 🙌🏻
+## Appreciation 🙌🏻
 
 Shout-out to all the contributors who made release 2.11.0 possible: 
 - [Juan Nunez-Iglesias](https://github.com/jni) 
