@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Zarr Python 2.12.0a1 Release"
-date: 2022-05-16
+title:  "Zarr Python 2.12.0a1 Release"
+date:   2022-05-16
 categories: blog
 permalink: /release-2-12-0-a1/
 ---
