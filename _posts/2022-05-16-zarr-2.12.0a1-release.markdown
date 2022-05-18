@@ -73,7 +73,7 @@ Before the pre-release version `2.12.0a1` there were releases `2.11.1`, `2.11.2`
 
 Also, a huge thanks to the contributors who made the current version `2.12.0a1` possible! 🙌🏻
 
-If you find the above features useful and end up using them, please mention [@zarr_dev](https://twitter.com/zarr_dev) on Twitter and tweet using #ZarrData, and we’ll make sure to get it featured! ✌🏻
+If you find the above features useful and end up using them, please mention [@zarr_dev](https://twitter.com/zarr_dev) on Twitter and tweet using [#ZarrData](https://twitter.com/intent/tweet?via=zarr_dev&hashtags=beautifuldata), and we’ll make sure to get it featured! ✌🏻
 
 ~Sanket Verma
 
