@@ -32,7 +32,7 @@ The new `zarr._store.v3` package has the necessary classes and functions for
 evaluating Zarr V3. Since the design is not finalised, the classes and
 functions are not automatically imported into the regular Zarr namespace.
 
-The pre-release can be installed via: `pip install —pre zarr`.
+The pre-release can be installed via: `pip install --pre zarr`.
 
 There have been significant changes to
 [Zarr's Python](https://github.com/zarr-developers/zarr-python) codebase to implement
