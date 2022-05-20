@@ -20,7 +20,7 @@ creating `FSStore` from an existing fsspec filesystem, performance
 improvement for Zarr arrays when appending data to S3, bug fixes,
 documentation and a maintenance fix.
 
-## Add suport for reading and writing Zarr V3
+## Add support for reading and writing Zarr V3
 
 Zarr Python 2.12 provides experimental infrastructure for reading and writing
 the upcoming V3 spec of the Zarr format. Users wishing to prepare for the
