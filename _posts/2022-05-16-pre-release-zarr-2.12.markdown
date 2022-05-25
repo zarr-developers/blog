@@ -34,6 +34,50 @@ functions are not automatically imported into the regular Zarr namespace.
 
 The pre-release can be installed via: `pip install --pre zarr`.
 
+> How to create arrays using Zarr V3:
+
+- First, you need to export the `ZARR_V3_EXPERIMENTAL_API=1` to your shell:
+
+> Type this in your terminal:
+
+`export ZARR_V3_EXPERIMENTAL_API=1`
+
+- Here's a small code snippet for creating V3 arrays:
+
+```
+>>>import zarr
+>>>z = zarr.create((10000, 10000),
+                    chunks=(100, 100),
+                    dtype='f8',
+                    compressor='default',
+                    path='path-where-you-want-zarr-v3-array',
+                    zarr_version=3)
+```
+
+- Further, you can use `z.info` to see details about the array you just created:
+
+```
+>>>z.info
+Name               : path-where-you-want-zarr-v3-array
+Type               : zarr.core.Array
+Data type          : float64
+Shape              : (10000, 10000)
+Chunk shape        : (100, 100)
+Order              : C
+Read-only          : False
+Compressor         : Blosc(cname='lz4', clevel=5, shuffle=SHUFFLE, blocksize=0)
+Store type         : zarr._storage.v3.KVStoreV3
+No. bytes          : 800000000 (762.9M)
+No. bytes stored   : 557
+Storage ratio      : 1436265.7
+Chunks initialized : 0/10000
+```
+You can also check `Store type` here (which indicates Zarr V3).
+
+> We see Chunks initialized: 0/10000 because we haven't written anything to our
+arrays yet. The chunks will be initialized when we start writing data to the
+arrays.
+
 There have been significant changes to
 [Zarr's Python](https://github.com/zarr-developers/zarr-python) codebase to implement
 V3 functionality. Highlights of the main changes include:
@@ -90,7 +134,7 @@ This feature was added by [Ryan Abernathy](https://github.com/rabernat) with PR
 
 - Added number encoder for `json.dumps` to support NumPy integers in `chunks` arguments. 
 
-This enhancement was added by [Eric Prostate](https://github.com/ericpre) with
+This enhancement was added by [Eric Prestat](https://github.com/ericpre) with
 PR [#933](https://github.com/zarr-developers/zarr-python/pull/933) and the
 issue was raised by [Mark Dickinson](https://github.com/mdickinson) with
 [#697](https://github.com/zarr-developers/zarr-python/issues/697).
@@ -112,23 +156,25 @@ Chaudhary](https://github.com/Alt-Shivam);
 
 ## More information
 
-Details on these features as well as the full list of all changes in `2.12.0a1`
-are available on the release notes. Check
-[here](https://zarr--1023.org.readthedocs.build/en/1023/release.html#a1).
+Details on these features as well as the full list of all changes in
+[`2.12.0a2`](https://zarr.readthedocs.io/en/master/release.html#a2)
+& [`2.12.0a1`](https://zarr.readthedocs.io/en/master/release.html#a1)
+are available on the release notes.
 
 ## Appreciation 🙌🏻
 
-Before the pre-release version `2.12.0a1` there were releases `2.11.1`,
-`2.11.2`, & `2.11.3` from Zarr Python package. A special shout-out to all the
-contributors who made previous releases possible:
+Before the pre-release version `2.12.0a2` and `2.12.0a1` there were
+releases `2.11.1`, `2.11.2`, & `2.11.3` from Zarr Python package. A
+special shout-out to all the contributors who made previous releases
+possible:
 
 - [Tobias Kölling](https://github.com/d70-t)
 - [Ben Jeffrey](https://github.com/benjeffery)
 - [Vyas Ramasubramani](https://github.com/vyasr)
 - [Tom White](https://github.com/tomwhite)
 
-Also, a huge thanks to the contributors who made the current version `2.12.0a1`
-possible! 🙌🏻
+Also, a huge thanks to the contributors who made the current version `2.12.0a2`
+and `2.12.0a1` possible! 🙌🏻
 
 If you find the above features useful and end up using them, please mention
 [@zarr_dev](https://twitter.com/zarr_dev) on Twitter and tweet using #ZarrData,
