@@ -28,6 +28,9 @@ url: "https://zarr.dev/" # the base hostname & protocol for your site, e.g. http
 twitter_username: zarr_dev
 github_username:  zarr-developers
 
+# Google Analytics Tracking
+google_analytics: G-BCRR9QE7Z0
+
 # Build settings
 theme: minima
 plugins:
