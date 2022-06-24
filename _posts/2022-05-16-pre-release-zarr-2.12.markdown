@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 Pre-release versions of
-[Zarr Python](https://github.com/zarr-developers/zarr-python) `2.12`
+[Zarr Python](https://github.com/zarr-developers/zarr-python) [`2.12`](https://zarr.readthedocs.io/en/stable/release.html#release-2-12-0)
 are now available! 🎉
 
 This blog post aims to overview new features, especially newly added
@@ -157,16 +157,16 @@ Chaudhary](https://github.com/Alt-Shivam);
 ## More information
 
 Details on these features as well as the full list of all changes in
-[`2.12.0a2`](https://zarr.readthedocs.io/en/master/release.html#a2)
-& [`2.12.0a1`](https://zarr.readthedocs.io/en/master/release.html#a1)
-are available on the release notes.
+`2.12.0a2` & `2.12.0a1` are available on the [release notes](https://zarr.readthedocs.io/en/stable/release.html#release-2-12-0).
 
 ## Appreciation 🙌🏻
 
-Before the pre-release version `2.12.0a2` and `2.12.0a1` there were
-releases `2.11.1`, `2.11.2`, & `2.11.3` from Zarr Python package. A
-special shout-out to all the contributors who made previous releases
-possible:
+Before the pre-release version `2.12.0a2` and `2.12.0a1` there were releases
+[`2.11.1`](https://zarr.readthedocs.io/en/stable/release.html#release-2-11-1),
+[`2.11.2`](https://zarr.readthedocs.io/en/stable/release.html#release-2-11-2), &
+[`2.11.3`](https://zarr.readthedocs.io/en/stable/release.html#release-2-11-3) from Zarr
+Python package. A special shout-out to all the contributors who made previous
+releases possible:
 
 - [Tobias Kölling](https://github.com/d70-t)
 - [Ben Jeffrey](https://github.com/benjeffery)
