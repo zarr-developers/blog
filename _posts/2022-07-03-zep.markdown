@@ -1,0 +1,292 @@
+---
+layout: post
+title: "Inception of Zarr Enhancement Proposals"
+description: Blog Post on Zarr Enhancement Proposals
+date: 2022-07-03
+categories: blog
+permalink: /zep-inception/
+---
+
+### Hi Zarr Community! 🙋🏻‍♂️
+
+It’s been a long time since I’ve talked to you, and I think there wouldn’t be a
+better time to do it, along with the announcement of our newly created
+community feedback process, which I’ve been working on for quite some time now.
+It’s been fun and intensive learning since I started working on the ZEPs.
+
+So first, I’ll discuss the motivation and need for a process for the Zarr
+community. After that, I’ll do a walk-through of different stages during its
+creation.
+
+But first, I’d like to share my experience working with the Zarr community
+briefly. June 2022 marks the completion of 5 months of me working with the
+fantastic humans of the Zarr Steering Council, the Zarr community and the
+overall open-source space.
+
+These last few months have been full of learning new technical and interpersonal
+skills, understanding Zarr deeply, making great new friends, meeting and
+interacting with a diverse and vibrant community, and speaking about Zarr at
+conferences and local meet-ups. So here’s me talking about Zarr at [OGC](https://youtu.be/KiiKvXzhyMs)
+and [PyData Delhi](https://youtu.be/EDXxytmCGqw).
+
+Before joining Zarr, I was under the impression that Zarr was a young project
+which needed someone with experience in handling communities. When I
+say *young* I thought the Zarr community was still in the early growth phase.
+But after a few weeks of joining Zarr, I realised how large, sophisticated and
+mature the Zarr community is. Handling a large community has its challenges,
+and I needed to put together the somewhat scattered pieces of the puzzle
+together to understand the big picture (a.k.a. the community). That helped me
+better understand the needs and necessary steps to manage the community and
+ensure the constructive growth of the community.
+
+Out of all the things I’ve done so far, creating ZEP (Zarr Enhancement
+Proposal) with the community’s help is one of the crucial and somewhat
+challenging tasks I’ve encountered in my time here.
+
+I plan to cover my other achievements in successive blogs. However, I’ll mostly
+talk about the ZEP in this blog.
+
+### The Motivation ⚡️
+
+I’d first like to talk about the motivation for having a community feedback
+process for the Zarr project and its community. The Zarr community is
+significant and touches the users & developers of various programming languages
+like Python, Julia, Javascript, C++ etc. All of these languages have
+successfully developed an implementation of Zarr based on the [V2 Specification](https://zarr.readthedocs.io/en/stable/spec/v2.html).
+
+The users and developers of these implementations have diverse needs and
+expectations from the Zarr specification. I’ve seen in the community calls how
+folks come up with an idea/feature/request, if implemented in Zarr, would
+greatly benefit the broader community. But most of the time, these proposals
+are vague and lack proper motivation and, most notably, a well-defined process
+to execute and implement them.
+
+> Talking with Alistair
+
+In February 2022, I was on a call with [Alistair Miles](https://github.com/alimanfoo/)
+(author of Zarr), and we briefly discussed how,
+in the past, the members of the Zarr community came up with an idea to
+change the spec. Alistair’s general concern was that their ideas/proposals were
+remotely not connected to the problems they were facing. In simpler words, the
+ideas and the problems were not entirely related. Also, sometimes the discussion
+from one community call doesn’t necessarily get carried over to the successive
+call due to the absence of participation/lack of interest/poor presentation,
+which halts the discussion on what could’ve been a potentially good proposal to
+the specification.
+
+It’s not every time that the idea/proposal is not good. We
+came across some good proposals, and after establishing the community’s
+consensus, we moved forward. But converting the ideas into proposals and then
+implementing them to the Zarr specification along with a minimalistic working POC
+requires a ton of work. For the time being, the Zarr Steering Council was
+shepherding this, but IMHO that’s not sustainable for an ever-expanding
+community like Zarr.
+
+Considering what I’ve said above, we were in dire need of a process that would
+not only have a well-defined manner of handling the incoming changes to the
+specification but also focus on involving the community and stakeholders in the
+decision-making process.
+
+### The Need 🤝🏻
+
+As time went by, the need for having a process only increased. The need for a
+community feedback process was strongly evident from a few things we saw in the
+previous months. So, I’d like to briefly talk about sharding and the evolvement
+of Zarr Specification V2 to V3.
+
+> Adding Sharding Support
+
+The addition of sharding to Zarr was proposed [here](https://github.com/zarr-developers/zarr-specs/issues/127)
+and [here](https://github.com/zarr-developers/zarr-python/issues/877). By going through
+the discussions over these GitHub issues, we can see that the Zarr community
+favours having sharding support added to the Zarr Specification. Also, upon
+further reading and looking upon Ryan’s comment [here](https://github.com/zarr-developers/zarr-specs/issues/127#issuecomment-1031599542),
+we see that the author for sharding ([Jonathon Striebel](https://github.com/jstriebel), Scalable Minds)
+is not clear on how does introduction of a significant change to the spec works which
+IMO was quite disheartening to see.
+
+> Evolvement of Specification V2 → V3
+
+Speaking about Spec V2, the Zarr Specification V2 has been widely adopted and
+implemented in several programming languages. It has enabled the use of cloud
+and distributed computing to process various large and challenging datasets,
+particularly in the scientific domain. However, as the usage of Zarr has grown
+and broadened, several limitations of Zarr V2 have surfaced. Some of them are:
+
+- Interoperability: Zarr V2 has been implemented in Python, C, C++, Julia, Java
+  and JavaScript. However, there is no feature parity across all
+  implementations. This is partly because the Zarr V2 spec was originally
+  developed with the Python implementation, which leans heavily on NumPy
+  concepts.
+
+- High latency storage: Zarr V2 was originally developed to support local file
+  system storage. Because of this, the design of Zarr V2 implicitly made
+  assumptions about the performance characteristics of the underlying storage
+  technology, such as low latency for storage I/O.  
+
+And other limitations like extensibility and storage layout flexibility. These
+limitations have motivated the need for the evolvement of Zarr Specification
+V3. Evolving the spec to a newer version needs heavy involvement from the users
+and developers of Zarr, the core devs of several implementations, the Zarr
+Steering Council and the overall Zarr community. 
+
+We’ve also seen that scattered discussions on several GitHub issues/PRs in the
+past have led to delayed responses, loss of interest and unexpected outcomes.
+The process would help facilitate the discussions in a well-defined manner
+where it would be easy for everyone to follow and participate in it. We
+primarily aim to use GitHub to conduct discussions on the proposals where the
+Zarr community could participate asynchronously.
+
+I’ve mentioned some of the many issues the community faced over the past several
+months, and to me, having a well-defined structured process in place would
+mitigate these issues. 
+
+
+### Walking through it all...🚶🏻‍♂️
+
+After talking with the Zarr Steering Council multiple times, hearing what the
+Zarr community had to say and going through past GitHub issues/PRs, now was
+time for me to take over and start working on the formation of a community
+feedback process for Zarr, which would later be named as Zarr Enhancement
+Proposal also abbreviated as ZEP. In this section, I’d try to walk through what
+I read, learnt, and did over months to formulate the ZEP. I’d try to limit this
+section and highlight only essential parts; otherwise, this would go on and on.
+But if you’re reading this and are interested in learning more, feel free to
+ping me. I’d be happy to discuss it with you or help you make one for your
+project/team/organisation.
+
+> Experience with processes
+
+Firstly I’d talk very briefly about my experience with creating processes. If
+you have gone through my first blog [here](https://zarr.dev/blog/welcoming-community-manager/),
+you’ll notice that I’ve been heavily involved with PyData and NumFOCUS. In the past, working with them,
+I helped establish a particular process for the program committees at PyData
+conferences which helped us in a fair evaluation of proposals we received
+during the CFP period. I’ve also been taking care of the local PyData chapter
+in my hometown Delhi, where I had the opportunity to create well-defined
+systems to run the monthly meet-ups, collaborate with organisations around me,
+invite speakers etc. I very much liked doing all of it and learnt a great deal
+about the organisation and creating a system from the ground up when needed.
+But ZEP was completely different from what I had done so far, so it came with a
+challenge. I’ll walk you through the ZEP process in several small sections, and
+each of them will essentially emphasise different stages of development of the
+ZEP. Here we go:
+
+> Reading and understanding existing community process
+
+I’ve been using Python for almost six years now and am familiar with [PEP](https://peps.python.org/).
+I’ve gone through various PEPs in the past and
+sometimes controversial PEPs, too, like [PEP 572](https://peps.python.org/pep-0572/), but I never got a chance to read PEP 1.
+[PEP 1](https://peps.python.org/pep-0001/) lays out and defines the working and
+fundamentals of the Python Enhancement Proposal (PEP). PEP is beautifully
+written and covers some crucial sections like its types, workflow, review &
+resolution, templates etc. PEP helped me understand the structural requirement
+for developing a robust process. I want to extend my warm thanks to PEP’s
+authors for this. After this, I moved on to understanding NEP and STAC. [NEP](https://numpy.org/neps/)
+is somewhat similar to PEP, but it is closer to what
+we wanted as PEP is for a programming language and NEP is for an open-source
+project. NEP is like a simpler version of PEP, focusing on various sections
+essential for an open-source project, not a programming language. NEP helped me
+understand what to include and what to discard for ZEP. After digesting NEP, I
+moved to STAC. [STAC](https://stacspec.org/en) stands for SpatioTemporal Asset
+Catalog, a specification for a common language to describe geospatial
+information. I liked that STAC’s [process](https://github.com/radiantearth/stac-spec/blob/master/process.md)
+to handle incoming changes is interweaved with the specification. STAC uses Git and
+GitHub to their full potential to achieve its goal.
+
+After I was done reading, I understood that ZEP needs to be somewhat between
+PEP, NEP and STAC. The system, documentation and working of PEP are something I
+wanted to adopt. PEP has proven a successful system for Python for a long time.
+But on the other hand, PEP is made for a language, so I needed to discard a few
+items from it. This is where NEP proved helpful. The Zarr specification is on a
+GitHub repo and uses Git for its workflows which made complete sense to use
+GitHub for handling incoming PRs to the spec, and this is what STAC does. So,
+if I had to summarise what I said above, I’d like to draw your attention to the
+Venn diagram below:
+
+<p align="center">
+  <img src="../assets/images/zep_venn.png" alt="zep_venn" width="360">
+  <center> ZEP Venn Diagram </center>
+</p>
+
+> PEP as starting point and evolving it to ZEP
+
+Initially, I used PEP for the first draft of ZEP, which can be seen on the GitHub pull request [here](https://github.com/zarr-developers/governance/pull/16).
+The first draft wasn’t the final one, but it helped me gather feedback from the Zarr
+community on what was missing, what was needed, and what was expected from
+the ZEP. The two critical changes incorporated after the feedback were:
+
+- Defining a new category for ZEP (SPEC ZEPs) to handle specification changes
+- Re-defining the governance process
+
+I also took care of minor changes like defining governance process around less-interesting ZEPs or the ZEPs
+where the consensus would be difficult to achieve, removal of Standard Track
+ZEPs etc. If you’re interested in going through the commit history and the full
+conversation, please refer [here](https://github.com/zarr-developers/governance/pull/16).
+
+> Different types of ZEPs 
+
+After lengthy discussions, the community agreed on
+having the following ZEP types. Every category has its importance for the
+community:
+- Specification ZEPs which would deal with the changes related to Zarr
+  Specification
+- Informational ZEPs which would describe a ZEP design issue or provides
+  general guideline or information to the Zarr community
+- Process ZEPs which would describe a new process around Zarr and its
+  implementations
+
+> Governance process
+
+The governance process for ZEP needed to be different from
+what we’ve seen in other processes. The Zarr community operates differently
+from other language and open-source projects. The versatility of Zarr
+Specification and being open-source have enabled implementations in several
+programming languages. We wanted the core developers of these implementations
+to be included in the decision-making process of ZEPs. Since these
+implementations have followed the specification during the development phase,
+we didn’t want to accept a ZEP that would prove beneficial for one
+implementation and breaking change for another. The Zarr Steering Council
+plays a vital role in the workflow of ZEP, and they should unanimously
+approve the ZEPs. Also, there should be no vetos from the Zarr
+Implementations Council (which essentially consists of core developers of
+several Zarr implementations). Please read more about the governance of ZEPs
+[here](https://zarr.dev/zeps/active/ZEP0000.html#how-does-a-zep-become-accepted).
+
+> Zarr Implementations Council a.k.a. ZIC
+
+The invites were sent to all of the
+implementations, which can be seen [here](https://github.com/zarr-developers/governance/issues?q=is%3Aissue+is%3Aclosed+label%3AZIC).
+I’m happy to express that almost all of the invites were accepted by the
+implementations, and a diverse group of humans represents the ZIC. These
+wonderful humans would help us further develop Zarr Specification, respective
+open-source implementations and the overall Zarr community. Please refer to
+the full list of ZIC members [here](https://github.com/zarr-developers/governance/blob/main/GOVERNANCE.md#zarr-implementation-council-zic).
+
+The next step was to set up a website to render and display the incoming ZEPs.
+
+> ZEP Website
+
+After the [PR](https://github.com/zarr-developers/governance/pull/16) was merged, I started working on the website for ZEP. The website
+shows the active and draft ZEPs as of now. [ZEP 0](https://zarr.dev/zeps/active/ZEP0000.html)
+lives under active ZEPs as it’s a process ZEP. Once we accept draft ZEPs, they’ll be moved under the accepted
+ZEPs section. Feel free to browse the website here: [https://zarr.dev/zeps/](https://zarr.dev/zeps).
+
+### Conclusion 🙌🏻
+
+So, this was my journey in the formulation of the ZEP process. Over the past few
+months, I’ve learned much about Zarr, its community and the project, and I look
+forward to solving interesting problems and helping Zarr.
+
+I want to extend my special thanks to [Josh Moore](github.com/joshmoore/), [Alistair Miles](github.com/alimanfoo/), [Ryan
+Abernathey](https://github.com/rabernat/) and [John A. Kirkham](https://github.com/jakirkham/) from the Zarr Steering Council and the Zarr
+Community for helping me along the way.
+
+Thanks for reading my blog. I hope I was able to convey my thoughts in a clear
+and structured manner. If you like this blog, feel free to share it on social
+media and please mention Zarr too.
+
+I’d appreciate any feedback for this blog, the website or anything remotely
+related to Zarr. You can reach me at [svsanketverma5@gmail.com](mailto:svsanketverma5@gmail.com). See you soon! ✌🏻
+
+~Sanket Verma
