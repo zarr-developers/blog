@@ -56,8 +56,8 @@ NumPy or other array APIs, please let us know. (How?)
 > Xarray / NetCDF Interoperability
 
 [NetCDF](https://github.com/unidata/netcdf-c/) (a long-time provider of stable
-file format) and [Xarray](https://github.com/pydata/xarray/) (N-D labelled
-arrays) have been updated to support each other’s project representation.
+file formats) and [Xarray](https://github.com/pydata/xarray/) (N-D labelled
+arrays) have been updated to support each other’s representation of named dimensions.
 [Mattia Almansi](https://github.com/malmans2) worked on adding support from
 Xarray’s side see [*xarray #6420*](https://github.com/pydata/xarray/pull/6420) and [Dennis Heimbigner](https://github.com/DennisHeimbigner) 
 worked from NetCDF’s side, see
@@ -70,18 +70,18 @@ being drafted for a common standard for named dimensions.
 The [‘datatree’ library](https://github.com/xarray-contrib/datatree) by
 [Thomas Nicholas](https://github.com/TomNicholas) and supported by [B-open](https://www.bopen.eu/) can now be used to represent a pyramid of related
 arrays and has been proposed as a standard data structure. Also, bioimaging
-users from ITK have tested the data structure, and dimensions have begun for
+users from ITK have tested the data structure, and discussions have begun for
 integration into [Napari](https://github.com/napari/napari).
 
 
-These goals were mainly focused on Zarr’s technical development, which revolves
+These goals mainly focus on Zarr’s technical development, which revolves
 around working collaboratively with critical open-source projects in the array
 storage ecosystem. We will continue working towards strengthening the bridges
 of interoperability with other projects in the upcoming months.
 
-## Community Engagement 👨‍👩‍👧‍👦🔗👫
+## Community Engagement 👩🏻‍🤝‍👨🏼👨🏿‍🤝‍👨🏻👩🏿‍🤝‍👩🏼
 
-In this section, I’d be mainly talking about the community engagement part of
+In this section, I’ll mainly be talking about the community engagement part of
 Zarr. For my part, I’ve focused on:
 
 - The first and foremost thing I did when I started my role was to relaunch the
@@ -142,9 +142,9 @@ is the next potential and upcoming change. In upcoming months, we will be focusi
 
 - Implementing Zarr Specification V3 across multiple programming languages
 - Implementing Sharding w/ [scalable minds GmbH](https://scalableminds.com/)
-- Zarr User Survey 2022 to better understand the community needs
+- Zarr User Survey 2022 to better understand the community's needs
 - Contracting with Python-based developers and organisations to add new features like IPFS and extensions like:
-  - [Fsspec](https://github.com/fsspec/) Integration
+  - Fsspec kerchunk support in additional languages
   - Development of Sparse Arrays
 - Improving visibility of the project by presenting at conferences and meet-ups
 - Aggregating Zarr data from the community and showcasing them on our website
