@@ -1,10 +1,13 @@
 ---
 layout: post
-title: "Outreachy Contributer Guide 2022"
-description: Blog Post on Outreachy Contributer Guide
+title: "Outreachy Contributor Guide 2022"
+description: Blog Post on Outreachy Contributor Guide
 date: 2022-10-11
 categories: blog
-permalink: /outreachy-contributer-guide/
+permalink: /outreachy-contributor-guide/
+redirect_from:
+  - /outreachy-contributer-guide/
+
 ---
 
 ### Hi Outreachies! 🙋🏻‍♂️
