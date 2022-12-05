@@ -1,36 +1,43 @@
 ---
 layout: post
-title: "State of Zarr v3 and ZEP 1"
-description: Blog Post with updates regarding the development of Zarr v3
+title: "State of Zarr V3 and ZEP0001"
+description: Blog Post with updates regarding the development of Zarr V3
 date: 2022-12-02
 categories: blog
 permalink: /zep1-update/
 
 ---
 
-The Zarr community is working on a new version of Zarr, v3, which was drafted
-and proposed via [ZEP 1] by [Alistair Miles]. [Jonathan Striebel] and
-[Jeremy Maitin-Shepard] have now taken over the authorship of [ZEP 1].
+The Zarr community is working on a new version of Zarr, V3, which was drafted
+and proposed via [ZEP0001] by [Alistair Miles]. [Jonathan Striebel] and
+[Jeremy Maitin-Shepard] have now taken over the authorship of [ZEP0001].
 
-The spec is now being finalized and **needs your feedback** before the Zarr
-Steering Council and the Zarr Implementor's Council vote on it. In two weeks,
-(on the 19th of December), the spec will go into feature-freeze, meaning only
+The specification is now being finalized and **needs your feedback** before the [Zarr
+Steering Council] and the [Zarr Implementation's Council] vote on it. In two weeks,
+(on the [19th of December](https://howlongagogo.com/date/2022/december/19)), the spec will go into feature-freeze, meaning only
 changes (issues) that have been previously discussed will be incorporated. The
 documents in question are:
 
-* [Zarr enhancement proposal for v3 (ZEP 1)](https://zarr.dev/zeps/draft/ZEP0001.html) (motivation and context)
-* [Current draft of the v3 specification](https://zarr-specs.readthedocs.io/en/latest/core/v3.0.html) (actual spec)
+* [Zarr Enhancement Proposal for V3 (ZEP0001)](https://zarr.dev/zeps/draft/ZEP0001.html)
+> Motivation and Context
 
-If you are familiar with v2, you might want to start at the
-[comparison with v2 section of the specs](https://zarr-specs.readthedocs.io/en/latest/core/v3.0.html#comparison-with-zarr-v2).
+* [Current draft of the V3 Specification](https://zarr-specs.readthedocs.io/en/latest/core/v3.0.html) 
+> The Actual Spec
+
+If you are familiar with V2, you might want to start at the
+[comparison with V2 section of the specs](https://zarr-specs.readthedocs.io/en/latest/core/v3.0.html#comparison-with-zarr-v2).
 
 Please feel free to:
 
-* add to the current discussions in [issues on the project board](https://github.com/orgs/zarr-developers/projects/2/views/2),
-* open [pull requests for changes](https://github.com/zarr-developers/zarr-specs/blob/main/docs/core/v3.0.rst), or
-* [add new issues](https://github.com/zarr-developers/zarr-specs/issues/new) if your topic does not fit any existing ones.
+* Add to the current discussions in [issues on the project board](https://github.com/orgs/zarr-developers/projects/2/views/2),
+* Open [pull requests for changes](https://github.com/zarr-developers/zarr-specs/blob/main/docs/core/v3.0.rst), or
+* [Add new issues](https://github.com/zarr-developers/zarr-specs/issues/new) if your topic does not fit any existing ones.
 
-[ZEP 1]: https://zarr.dev/zeps/draft/ZEP0001.html
+~Jonathan Striebel, [scalableminds](https://scalableminds.com/)
+
+[ZEP0001]: https://zarr.dev/zeps/draft/ZEP0001.html
 [Alistair Miles]: https://github.com/alimanfoo
 [Jonathan Striebel]: https://github.com/jstriebel
 [Jeremy Maitin-Shepard]: https://github.com/jbms
+[Zarr Steering Council]: https://github.com/zarr-developers/governance/blob/main/GOVERNANCE.md#zarr-steering-council
+[Zarr Implementation's Council]: https://github.com/zarr-developers/governance/blob/main/GOVERNANCE.md#zarr-implementation-council-zic
