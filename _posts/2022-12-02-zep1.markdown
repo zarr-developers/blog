@@ -33,7 +33,7 @@ Please feel free to:
 * Open [pull requests for changes](https://github.com/zarr-developers/zarr-specs/blob/main/docs/core/v3.0.rst), or
 * [Add new issues](https://github.com/zarr-developers/zarr-specs/issues/new) if your topic does not fit any existing ones.
 
-~Jonathan Striebel, [scalableminds](https://scalableminds.com/)
+~Jonathan Striebel, [scalableminds](https://scalableminds.com/) and Jeremy Maitin-Shepard, [Google](https://google.com)
 
 [ZEP0001]: https://zarr.dev/zeps/draft/ZEP0001.html
 [Alistair Miles]: https://github.com/alimanfoo
