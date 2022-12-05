@@ -9,8 +9,8 @@ permalink: /zep1-update/
 ---
 
 The Zarr community is working on a new version of Zarr, V3, which was drafted
-and proposed via [ZEP0001] by [Alistair Miles]. [Jonathan Striebel] and
-[Jeremy Maitin-Shepard] have now taken over the authorship of [ZEP0001].
+and proposed via [ZEP0001] by [Alistair Miles]. We, [Jonathan Striebel] and
+[Jeremy Maitin-Shepard], have now taken over the authorship of [ZEP0001].
 
 The specification is now being finalized and **needs your feedback** before the [Zarr
 Steering Council] and the [Zarr Implementation Council] vote on it. In two weeks,
