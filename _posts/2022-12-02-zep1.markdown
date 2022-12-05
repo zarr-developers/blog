@@ -13,7 +13,7 @@ and proposed via [ZEP0001] by [Alistair Miles]. [Jonathan Striebel] and
 [Jeremy Maitin-Shepard] have now taken over the authorship of [ZEP0001].
 
 The specification is now being finalized and **needs your feedback** before the [Zarr
-Steering Council] and the [Zarr Implementation's Council] vote on it. In two weeks,
+Steering Council] and the [Zarr Implementation Council] vote on it. In two weeks,
 (on the [19th of December](https://howlongagogo.com/date/2022/december/19)), the spec will go into feature-freeze, meaning only
 changes (issues) that have been previously discussed will be incorporated. The
 documents in question are:
