@@ -278,7 +278,7 @@ So, this was my journey in the formulation of the ZEP process. Over the past few
 months, I’ve learned much about Zarr, its community and the project, and I look
 forward to solving interesting problems and helping Zarr.
 
-I want to extend my special thanks to [Josh Moore](github.com/joshmoore/), [Alistair Miles](github.com/alimanfoo/), [Ryan
+I want to extend my special thanks to [Josh Moore](https://github.com/joshmoore/), [Alistair Miles](https://github.com/alimanfoo/), [Ryan
 Abernathey](https://github.com/rabernat/) and [John A. Kirkham](https://github.com/jakirkham/) from the Zarr Steering Council and the Zarr
 Community for helping me along the way.
 
