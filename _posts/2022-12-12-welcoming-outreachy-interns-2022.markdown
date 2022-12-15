@@ -9,7 +9,7 @@ permalink: /welcoming-outreachy-2022-interns/
 
 ## Hi Zarr Community! 🙋🏻‍♂️
 
-The holidays are just around the corner, and we have something good to share with the community (Yes, it’s better than Christmas presents 🎁). October was full of surprises for the Zarr Community as we decided to participate in the [Outreachy](https://www.outreachy.org/) program for the first time.
+The holidays are just around the corner, and we wanted to share the good news about the [Outreachy](https://www.outreachy.org/) participation, which shows the drive and motivation of contributors, the trust and strength of the open-source community, and the resiliency of the [Zarr](https://zarr.dev/) project.
 
 > The Initiation 🏁
 
