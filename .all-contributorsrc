@@ -16,6 +16,17 @@
         "content",
         "maintenance"
       ]
+    },
+    {
+      "login": "joshmoore",
+      "name": "Josh Moore",
+      "avatar_url": "https://avatars.githubusercontent.com/u/88113?v=4",
+      "profile": "http://joshmoore.github.io",
+      "contributions": [
+        "ideas",
+        "maintenance",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,

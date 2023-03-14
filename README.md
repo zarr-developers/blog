@@ -1,6 +1,6 @@
 # Zarr Official Blog
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## Welcome to Zarr Official Blog! 🚀
@@ -58,6 +58,7 @@ Thanks to all these people for contributing. ([emoji-key](https://allcontributor
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://sanketverma.me"><img src="https://avatars.githubusercontent.com/u/20305658?v=4?s=100" width="100px;" alt="Sanket Verma"/><br /><sub><b>Sanket Verma</b></sub></a><br /><a href="#blog-MSanKeys963" title="Blogposts">📝</a> <a href="#content-MSanKeys963" title="Content">🖋</a> <a href="#maintenance-MSanKeys963" title="Maintenance">🚧</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://joshmoore.github.io"><img src="https://avatars.githubusercontent.com/u/88113?v=4?s=100" width="100px;" alt="Josh Moore"/><br /><sub><b>Josh Moore</b></sub></a><br /><a href="#ideas-joshmoore" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-joshmoore" title="Maintenance">🚧</a> <a href="https://github.com/zarr-developers/blog/pulls?q=is%3Apr+reviewed-by%3Ajoshmoore" title="Reviewed Pull Requests">👀</a></td>
     </tr>
   </tbody>
 </table>
