@@ -25,8 +25,6 @@ The nomenclature of the `.markdown` file should be like:
 `YYYY-MM-DD-your-title.markdown`. Feel free to ask queries on our Gitter
 channel [here](https://gitter.im/zarr-developers/community).
 
----
-
 - Fixing issues, adding new features, finding a bug:
 
 If you wish to contribute to the blog by fixing issues/bugs or adding a feature,
@@ -46,5 +44,18 @@ Steps:
 
 Once you're done, push your changes to your fork and open a [GitHub pull
 request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
+
+## Contributors
+
+Thanks to all these people for contributing. ([emoji-key](https://allcontributors.org/docs/en/emoji-key))
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 ---
