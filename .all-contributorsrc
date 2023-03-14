@@ -16,6 +16,15 @@
         "content",
         "maintenance"
       ]
+    },
+    {
+      "login": "jakirkham",
+      "name": "jakirkham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3019665?v=4",
+      "profile": "https://github.com/jakirkham",
+      "contributions": [
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
