@@ -27,6 +27,15 @@
         "maintenance",
         "review"
       ]
+    },
+    {
+      "login": "jstriebel",
+      "name": "Jonathan Striebel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7216331?v=4",
+      "profile": "https://jonathanstriebel.de",
+      "contributions": [
+        "blog"
+      ]
     }
   ],
   "contributorsPerLine": 7,
