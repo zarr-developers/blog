@@ -98,3 +98,19 @@ Shout-out to all the contributors who made release 2.11.0 possible:
 If you find the above features useful and end up using them, please mention [@zarr_dev](https://twitter.com/zarr_dev) on Twitter and tweet using #ZarrData and we'll make sure to get it featured! ✌🏻
 
 ~Sanket Verma
+
+<script src="https://giscus.app/client.js"
+        data-repo="zarr-developers/blog"
+        data-repo-id="R_kgDOGxrWVg"
+        data-category="General"
+        data-category-id="DIC_kwDOGxrWVs4CU5q_"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
