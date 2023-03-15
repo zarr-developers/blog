@@ -54,6 +54,15 @@
       "contributions": [
         "review"
       ]
+    },
+    {
+      "login": "chris-allan",
+      "name": "Chris Allan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/487082?v=4",
+      "profile": "https://www.glencoesoftware.com/",
+      "contributions": [
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
