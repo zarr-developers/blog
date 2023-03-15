@@ -45,6 +45,15 @@
       "contributions": [
         "maintenance"
       ]
+    },
+    {
+      "login": "normanrz",
+      "name": "Norman Rzepka",
+      "avatar_url": "https://avatars.githubusercontent.com/u/335438?v=4",
+      "profile": "http://normanrz.com/",
+      "contributions": [
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
