@@ -1,0 +1,133 @@
+---
+layout: post
+title: "Summarising OME-Zarr Java @ OME2022"
+description: Blog Post on Summarising OME-Zarr Java @ OME2022
+date: 2023-03-14
+categories: blog
+permalink: /ome-2022/
+---
+
+## Namaste Zarr Community! 🙏🏻
+
+I hope you are doing great. Recently, there has been a lot of exciting development on the Zarr front. Some of them are new collaborations, conventions, research publications, submission of new ZEPs, etc. I’ll cover those in separate blog posts. Meanwhile, I want to talk about something interesting for the Java community in the Zarr ecosystem. ;)
+
+[OME](https://www.openmicroscopy.org/) hosted a [4-day event](https://www.openmicroscopy.org/events/ome-community-meeting-2022/) last November, and on one of the days, they discussed the future of the Java implementation of Zarr, i.e. Zarr-Java, extensively. The discussion was centred around the needs, current state and future work needed to have a solid foundational Zarr implementation in Java which is much needed by the community. This blog post aims to summarise the important sections of the meetings, which could be used as a reference for future work in the development of Zarr-Java.
+
+**Disclaimer**: This blog post is a naive attempt by [me](https://twitter.com/msankeys963) to understand the vast Java and Zarr ecosystem and summarise it in a few sentences, so if you think I misinterpreted something, feel free to point it out. I’m more than happy to be told that I was wrong. :)
+
+Thanks to [Chris](https://twitter.com/dundeecanuck), [Sebastien](https://github.com/sbesson), and [Norman](https://twitter.com/normanrz/) on behalf of [Glencoe Software](https://www.glencoesoftware.com/), [OME](https://www.openmicroscopy.org/) and [Scalable Minds](https://scalableminds.com/) for putting the slides together, delivering and moderating both sessions.
+
+### The reason for bringing everyone together @ OME2022 👩🏻‍🤝‍👨🏼👨🏿‍🤝‍👨🏻👩🏿‍🤝‍👩🏼
+
+First, I’m going to focus on the reason why this meeting took place. There is no single Java implementation of Zarr on which the whole Java community could rely. It might be too big of an ask, but having something like [Zarr-Python](https://github.com/zarr-developers/zarr-python) for the Java community would be perfect. The JVM Zarr Community is fragmented, which increases friction in the community and further affects and delays the adoption of a single OSS for the whole community. Until now, the developers/research groups/companies of the Java ecosystem who need the Zarr package have been forking various implementations of Zarr and trying to get them to work according to their use case. It might help a single cause, but it certainly doesn’t help the larger community. Moreover, these forked libraries are unmaintained when the desired use case is achieved due to the lack of resources and developer support. Having multiple similar libraries also affects confidence and trust and puts the community in a state of ambiguity on which project to rely on.
+
+As it is evident from above, there is a strong need for a community-wide accepted Zarr-Java project which covers all the essential baseline features from the [Zarr specification](https://zarr.readthedocs.io/en/stable/spec/v2.html). This also creates room to strengthen and improve the existing [Zarr specification](https://zarr.readthedocs.io/en/stable/spec/v2.html) by introducing better cross-language engagement and participation.
+
+There’s also a need to define *baseline* features for Zarr-Java that the reference implementations should support. The requirements, as shared during the sessions, are:
+
+Baseline requirements:
+
+- Java 8+
+- Support for [Zarr V2 Specification](https://zarr.readthedocs.io/en/stable/spec/v2.html) (including dimension separator)
+- Inspired by Zarr Python API foundational concepts (store, compression, chunk)
+- Data types: signed/unsigned integers 1 -> 8 bytes, 4 and 8-byte floating point
+- Stores: Filesystem, in-memory, HTTP, Amazon S3
+- Extensible compression: blsoc, zstd, lz4, zlib, bzip2, lzma at least
+- Chunk API
+- Basic Slice API
+
+Nice to have features:
+
+- Synchronous and asynchronous API options
+- Framework to support sharding and [Zarr V3 Specification](https://zarr-specs.readthedocs.io/en/latest/core/v3.0.html#zarr-core-specification-v3-0)
+
+These requirements are fair ask and, if/when developed, will serve as a solid foundational block for the Zarr-Java ecosystem. 
+
+Moving on, let’s see what Zarr’s history of development in the Java sphere has been like for the past years.
+
+### What’s the history been like? 🕥🕣🕡
+
+![](https://i.imgur.com/u7GfYXv.jpg)
+
+As you can see from the above timeline, 
+
+The earliest development started in October 2011 by scalableminds on [webknossos](https://webknossos.org/) which lets you annotate, visualise and share N-dimensional arrays. After that, folks at [Janelia](https://www.janelia.org/) began working on Java NGFF (Next Generation File Format) via [N5](https://github.com/saalfeldlab/n5). Finally, the first conversation for having JVM Zarr Implementation started in 2018 in the [zarr-developers/community](https://github.com/zarr-developers/community/), which can be seen [here](https://github.com/zarr-developers/community/issues/15).
+
+This led [Ryan Williams](https://github.com/ryan-williams) from [Zarr Steering Council](https://github.com/zarr-developers/governance/blob/main/GOVERNANCE.md#zarr-steering-council) to work on [laseronlab/ndarray.scala](https://github.com/lasersonlab/ndarray.scala). Zarr’s first pure Java implementation was not seen until 2019 by [Brockmann Consult](https://www.brockmann-consult.de/), which lives here at [bcdev/jzarr](https://github.com/bcdev/jzarr). The efforts from the Brockamnn group are commendable as jzarr is one of the precise adoptions of the Zarr specification. Even though it's been almost a year since the [last commit](https://github.com/bcdev/jzarr/commit/006e788fc42d6fbd006d0d3a06ff9e0d1f8db89a), no other Zarr Java implementation comes close to what jzarr can achieve.
+
+After this, various interesting projects showed up, as seen on the timeline, which included the adoption of Zarr Specification in some manner. Chris did an excellent job explaining these various projects in the morning session, which can be seen [here](https://youtu.be/jf9im8LX8Q8?t=1044). I’d highly recommend listening to him before going further.
+
+Despite these outstanding efforts by exceptional groups and individuals, the community remained somewhat fragmented, and there is a strong need to unite and work on a collaborative project.
+
+### Current state of work 🗂️
+    
+The [jzarr 0.3.5](https://github.com/bcdev/jzarr), [jblosc 1.0.1](https://github.com/lasersonlab/jblosc) and [Amazon S3 JSR-203 Java 7 NIO2](https://github.com/lasersonlab/Amazon-S3-FileSystem-NIO2) Implementation are the most stable, well-documented and cohesive OSS projects. The jzarr adaption of the Zarr specification is quite good, and most of the community is using it. But despite its merits, there are certain limitations; they are:
+
+- The S3 anonymous access is somewhat broken and doesn’t play nicely with S3-compatible storage
+- The project hasn’t been maintained properly in a long time
+- JZarr feature support and the community support to add new features like Sharding and V3 is also not quite good
+
+There are other options the community could look at, like [N5](https://github.com/saalfeldlab/n5)+[N5-Zarr](https://github.com/saalfeldlab/n5-zarr), [Z5](https://github.com/constantinpape/z5), [ndarray.scala](https://github.com/lasersonlab/ndarray.scala) or [NetCDF-Java](https://github.com/Unidata/netcdf-java). But when we deep dive into their codebase, existing framework, learning curve, and adoption of the Zarr specification, it seems like every other project falls short on one or many critical features which are absolutely needed. Again, Chris did a fantastic job explaining those, and you can listen to it [here](https://youtu.be/jf9im8LX8Q8?t=1785).
+
+If you like great visuals instead, [Josh Moore](https://twitter.com/notjustmoore/) prepared a neat matrix of the current state of projects.
+
+Here `S` denotes fully supported, `P` denotes partially supported, and `N` denotes not supported.
+
+![](https://i.imgur.com/EWaF62h.jpg)
+
+This clearly says the community needs a Zarr implementation that ticks all the boxes mentioned above. So let’s have a look at what is being proposed.
+    
+### What's coming next? 🔮
+    
+The proposal for moving forward looks something like this:
+
+- Work with [Blosc](https://github.com/Blosc/), [Ryan Williams](https://github.com/ryan-williams) and the [Laserson Lab](https://github.com/lasersonlab/) to bring [lasersonlab/JBlosc](https://github.com/lasersonlab/jblosc) under [zarr-developers](https://github.com/zarr-developers/)
+- Continue work providing object code for multiple platforms from native code
+    - https://github.com/glencoesoftware/c-blosc-windows-x86_64
+    - https://github.com/glencoesoftware/c-blosc-macos-x86_64
+- Work with [Ryan Williams](https://github.com/ryan-williams) and the [Laserson Lab](https://github.com/lasersonlab/) to bring [lasersonlab/Amazon-S3-FileSystem-NIO2](https://github.com/lasersonlab/Amazon-S3-FileSystem-NIO2) under [zarr-developers](https://github.com/zarr-developers/)
+- Start `zarr-developers/zarr-java` and bring the best ideas, concepts, and code from [N5-Zarr](https://github.com/saalfeldlab/n5-zarr), [Zarr](https://github.com/zarr-developers/zarr-python), and [NetCDF-Java](https://github.com/Unidata/netcdf-java) into a reference library
+
+The idea here is to assemble people with a specific skill set and bring them to work together under the zarr-developers umbrella. There was a Q&A session after the presentation. Some of the crucial insights from the QnA are:
+
+- There are many opinions on several important stuff like design choices, what compression to use, consolidating arguments etc., and we’d like to hear from you and get as many hands as we can to work together. We welcome community participation and contributions
+- Forming a consensus on some critical design choices for Zarr-Java
+- Getting Zarr-Java in momentum is not only a developer’s task but also a matter of community participation and engagement
+- The Java community needs to participate in the discussions related to SPEC to help their cause, and if they don’t, they are going to be left behind
+- We’re mostly going to learn things by getting our hands dirty
+
+Since this blog post aims to summarise the meetings, I can only cover a tiny portion of the Q&A sessions. So I’d encourage you to listen to the QnA sessions from [morning](https://youtu.be/jf9im8LX8Q8?t=2830) and [afternoon](https://youtu.be/UnzbwrB6bSk?t=2541) sessions to see what the community thinks of this effort and how excited they are.
+
+### Session recordings 🎬
+
+You can watch the full recording of morning session here 👇🏻:
+
+<iframe
+    width="700"
+    height="500"
+    src="https://www.youtube.com/embed/jf9im8LX8Q8"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
+
+And afternoon session here 👇🏻:
+
+<iframe
+    width="700"
+    height="500"
+    src="https://www.youtube.com/embed/UnzbwrB6bSk"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
+
+~
+
+That’s it from my side. I hope this post was helpful and summarised the discussions well. If there’s anything not clear, critics are welcome! 
+
+Keep watching this space as I try to cover the advancements of what we’ve discussed. As always, if you’d like to get involved, feel free to drop ‘Hi’ on our [Gitter channel](https://gitter.im/zarr-developers/community). Until next time. Peace! ✌🏻
+
+~Sanket Verma
