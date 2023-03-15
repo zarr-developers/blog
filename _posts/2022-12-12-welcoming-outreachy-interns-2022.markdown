@@ -49,3 +49,19 @@ Though it’s only been a week since they started their work, they’re on an ex
 I’ll be cross-posting their upcoming blog posts regularly here, so please keep an eye on this page. I’m excited to help them build new things for Zarr and look forward to working with them. Until next time. Peace! ✌🏻
 
 ~Sanket Verma
+
+<script src="https://giscus.app/client.js"
+        data-repo="zarr-developers/blog"
+        data-repo-id="R_kgDOGxrWVg"
+        data-category="General"
+        data-category-id="DIC_kwDOGxrWVs4CU5q_"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>

@@ -166,3 +166,19 @@ Thanks for reading this blog post. If you’d like to contribute to Zarr in any
 manner feel free to ping me or drop a 'Hi🙋🏻‍♂️' over at our [Gitter](https://gitter.im/zarr-developers/community) channel. Talk to you soon! 
 
 ~Sanket Verma
+
+<script src="https://giscus.app/client.js"
+        data-repo="zarr-developers/blog"
+        data-repo-id="R_kgDOGxrWVg"
+        data-category="General"
+        data-category-id="DIC_kwDOGxrWVs4CU5q_"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>

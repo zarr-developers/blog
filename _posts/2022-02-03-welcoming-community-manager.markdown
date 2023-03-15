@@ -78,3 +78,19 @@ I’m on [Twitter](https://twitter.com/msankeys963), [GitHub](https://github.com
 You’ll be hearing from me soon. Until then, Adios! ✌🏻
 
 ~Sanket Verma
+
+<script src="https://giscus.app/client.js"
+        data-repo="zarr-developers/blog"
+        data-repo-id="R_kgDOGxrWVg"
+        data-category="General"
+        data-category-id="DIC_kwDOGxrWVs4CU5q_"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
