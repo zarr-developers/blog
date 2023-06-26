@@ -19,7 +19,7 @@ In this blog post, I highlight a few talks which were delivered in the past two 
 
 I went to Berlin, Germany, in April to speak at [PyCon DE and PyData Berlin 2023](https://2023.pycon.de/). My talk was titled “[The Beauty of Zarr](https://2023.pycon.de/program/JY3R3Z/)”, where I emphasised the inner workings using some near illustrations by [Trevor Manz](https://github.com/manzt). I highlighted how simple, convenient and hackable it is to use Zarr. After going through various explanations, I focused on some critical issues that Zarr eradicates because of its design and workings, i.e. chunking, compression, cloud-enabled etc. 
 
-Towards the end, I prepared a [Jupyter notebook](https://github.com/MSanKeys963/presentations/blob/main/pycon_de_pydata_berlin_2023/notebook.ipynb) where I walked through Zarr 101 code to create, read, write and manipulate arrays. I also converted the Zarr pixelated logo from `.png` to `.zarr` format, which was a neat closing for my talk.
+Towards the end, I prepared a [Jupyter notebook](https://github.com/MSanKeys963/presentations/blob/main/pycon_de_pydata_berlin_2023/notebook.ipynb) where I walked through [Zarr 101](https://zarr.readthedocs.io/en/stable/tutorial.html) code to create, read, write and manipulate arrays. I also converted the Zarr pixelated logo from `.png` to `.zarr` format, which was a neat closing for my talk.
 
 > The slides and notebook can be accessed [here](https://github.com/MSanKeys963/presentations/tree/main/pycon_de_pydata_berlin_2023).
 
