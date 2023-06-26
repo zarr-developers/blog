@@ -89,7 +89,7 @@ The video recording of the session can be seen here:
 > The third part took place on May 22nd where:
 
 - [Hailiang Zhang](https://github.com/hailiangzhang/) presented the accumulation proposal, i.e. [ZEP0005](https://zarr.dev/zeps/draft/ZEP0005.html)
-- [Max Jones](https://github.com/maxrjones) spoke about Kerchunk and Pangeo-Forge recipes developments
+- [Max Jones](https://github.com/maxrjones) spoke about [Kerchunk](https://github.com/fsspec/kerchunk) and [Pangeo-Forge](https://pangeo-forge.org/) recipes developments
 
 The video recording of the session can be seen here:
 
