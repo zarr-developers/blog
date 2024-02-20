@@ -9,8 +9,8 @@ version: 2
 build:
   os: ubuntu-22.04
 
-tools:
- ruby: "3.3"
+  tools:
+    ruby: "3.3"
 
   commands:
     - bundle install
