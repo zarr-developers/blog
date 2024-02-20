@@ -18,6 +18,8 @@ from [Gitter](https://gitter.im/zarr-developers/community) to [Zulip](https://os
 as our primary chat platform. This transition marks a new chapter for our
 community and offers several advantages for our members.
 
+Join here → <https://ossci.zulipchat.com/>
+
 ## Why Zulip? 🤔
 
 Zulip offers a robust and versatile platform for communication and
@@ -67,11 +69,10 @@ if you'd like to chat with us!
 
 ## Join Us on Zulip! 🔗
 
-Ready to join the conversation? Head over to the OSSCi Zulip server and dive
-into discussions surrounding Zarr and other exciting projects in the scientific
-Python ecosystem. We look forward to connecting with you there!
-
-Join here → <https://ossci.zulipchat.com/>
+Ready to join the conversation? Head over to the [OSSCi Zulip](https://ossci.zulipchat.com/)
+server and dive into discussions surrounding Zarr and other exciting projects 
+in the scientific Python ecosystem. We look forward to connecting with you
+there!
 
 ~Sanket Verma
 
