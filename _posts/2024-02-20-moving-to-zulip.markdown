@@ -1,19 +1,22 @@
 ---
 layout: post
-title: "Leveling Up: Zarr Community Transitions to Zulip 🪜"
+title: "Levelling Up: Zarr Community Transitions to Zulip"
 description: Blog Post on Zarr Community Update → Moving to Zulip
 date: 2024-02-20
 categories: blog
 permalink: /zulip-transition/
 ---
 
-## Zarr Community Update: Moving to Zulip 💬
+Hi, Zarr Community! 👋🏻
+
+We've got an exiciting announcement for you all! 😄
+
+## Community Update: Moving to Zulip 💬
 
 We're excited to announce that the Zarr community has made a significant move
-from [Gitter](https://gitter.im/zarr-developers/community) to [Zulip]
-(https://ossci.zulipchat.com/) as our primary chat platform. This transition
-marks a new chapter for our community and offers several advantages for our
-members.
+from [Gitter](https://gitter.im/zarr-developers/community) to [Zulip](https://ossci.zulipchat.com/)
+as our primary chat platform. This transition marks a new chapter for our
+community and offers several advantages for our members.
 
 ## Why Zulip? 🤔
 
@@ -58,13 +61,19 @@ welcome any feedback, suggestions, or ideas you may have regarding the Zulip
 migration or any other aspect of our community. Your input helps us better
 serve the needs of our users and advance our shared goals.
 
+Please create an issue in [zarr-developers/community](https://github.com/zarr-developers/community/issues)
+or join one of our [community meetings](https://zarr.dev/community-calls/)
+if you'd like to chat with us! 
+
 ## Join Us on Zulip! 🔗
 
 Ready to join the conversation? Head over to the OSSCi Zulip server and dive
 into discussions surrounding Zarr and other exciting projects in the scientific
 Python ecosystem. We look forward to connecting with you there!
 
-Join here → https://ossci.zulipchat.com/
+Join here → <https://ossci.zulipchat.com/>
+
+~Sanket Verma
 
 <script src="https://giscus.app/client.js"
         data-repo="zarr-developers/blog"
