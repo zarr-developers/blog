@@ -29,6 +29,11 @@ in conversations effectively. Additionally, Zulip provides powerful search
 capabilities, ensuring that valuable information shared in the past remains
 accessible to all.
 
+Zulip's unique message sharing feature allows conversations to be easily shared
+around the web via unique links. In addition, Zulip's indexing of all content
+by search engines ensures that the knowledge base is easily accessible to all
+users.
+
 ## Hosting Thanks 🙏🏻
 
 We extend our sincere gratitude to the good humans at the [Open Source Science
@@ -42,7 +47,7 @@ for helping us! 🙌🏻
 
 ## Building a Hub for Open Science 🧬
 
-The OSSCi Zulip server will serve as a hub for various projects under the
+The OSSCi Zulip server will serve as a hub for various projects in the
 scientific Python ecosystem, starting with Zarr. By centralising communication
 within this platform, we aim to foster greater collaboration, knowledge
 sharing, and community building among like-minded individuals passionate about
