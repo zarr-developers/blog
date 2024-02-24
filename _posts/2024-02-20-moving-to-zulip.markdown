@@ -13,7 +13,7 @@ We've got an exiciting announcement for you all! 😄
 
 ## Community Update: Moving to Zulip 💬
 
-We're excited to announce that the Zarr community has made a significant move
+We're excited to announce that the Zarr community has made a move
 from [Gitter](https://gitter.im/zarr-developers/community) to [Zulip](https://ossci.zulipchat.com/)
 as our primary chat platform. This transition marks a new chapter for our
 community and offers several advantages for our members.
