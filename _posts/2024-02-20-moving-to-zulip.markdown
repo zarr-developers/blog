@@ -2,7 +2,7 @@
 layout: post
 title: "Levelling Up: Zarr Community Transitions to Zulip"
 description: Blog Post on Zarr Community Update → Moving to Zulip
-date: 2024-02-20
+date: 2024-02-26
 categories: blog
 permalink: /zulip-transition/
 ---
@@ -20,7 +20,7 @@ community and offers several advantages for our members.
 
 Join here → <https://ossci.zulipchat.com/>
 
-## Why Zulip? 🤔
+### Why Zulip? 🤔
 
 Zulip offers a robust and versatile platform for communication and
 collaboration. Its threading model allows for organized and focused
@@ -34,7 +34,7 @@ around the web via unique links. In addition, Zulip's indexing of all content
 by search engines ensures that the knowledge base is easily accessible to all
 users.
 
-## Hosting Thanks 🙏🏻
+### Hosting Thanks 🙏🏻
 
 We extend our sincere gratitude to the good humans at the [Open Source Science
 Initiative](https://opensource.science/) (OSSCi) for generously hosting the
@@ -45,7 +45,7 @@ endeavour.
 Shoutout to [Jonathan Starr](https://www.linkedin.com/in/jonathan-starr-b04032284/)
 for helping us! 🙌🏻
 
-## Building a Hub for Open Science 🧬
+### Building a Hub for Open Science 🧬
 
 The OSSCi Zulip server will serve as a hub for various projects in the
 scientific Python ecosystem, starting with Zarr. By centralising communication
@@ -53,14 +53,14 @@ within this platform, we aim to foster greater collaboration, knowledge
 sharing, and community building among like-minded individuals passionate about
 open science and research.
 
-## Official Chat Platform ™️
+### Official Chat Platform ™️
 
 With this migration, the OSSCi Zulip server becomes the official chat platform
 for the Zarr community. We encourage all Zarr users, contributors, and
 enthusiasts to join us on Zulip to stay updated on the latest developments,
 seek assistance, and engage with fellow community members.
 
-## Your Feedback Matters 🔁
+### Your Feedback Matters 🔁
 
 At Zarr, we value the input and ideas of our community members. We're committed
 to continuously improving our platform and user experience. Therefore, we
@@ -72,12 +72,19 @@ Please create an issue in [zarr-developers/community](https://github.com/zarr-de
 or join one of our [community meetings](https://zarr.dev/community-calls/)
 if you'd like to chat with us! 
 
-## Join Us on Zulip! 🔗
+### Join Us on Zulip! 🔗
 
 Ready to join the conversation? Head over to the [OSSCi Zulip](https://ossci.zulipchat.com/)
 server and dive into discussions surrounding Zarr and other exciting projects 
 in the scientific Python ecosystem. We look forward to connecting with you
 there!
+
+> Transition Note: Initial Member Count 📝
+
+Please note that during our transition from Gitter to Zulip, new members joining
+the Zulip chat room may observe an initially lower member count compared to
+Gitter. However, we are confident in the growth and vibrancy of our community
+on Zulip and invite all users to join us in this exciting new phase.
 
 ~Sanket Verma
 
