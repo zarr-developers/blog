@@ -2,7 +2,7 @@
 layout: post
 title: "Levelling Up: Zarr Community Transitions to Zulip"
 description: Blog Post on Zarr Community Update → Moving to Zulip
-date: 2024-02-26
+date: 2024-02-27
 categories: blog
 permalink: /zulip-transition/
 ---
