@@ -76,15 +76,14 @@ if you'd like to chat with us!
 
 Ready to join the conversation? Head over to the [OSSCi Zulip](https://ossci.zulipchat.com/)
 server and dive into discussions surrounding Zarr and other exciting projects 
-in the scientific Python ecosystem. We look forward to connecting with you
-there!
+in the scientific Python ecosystem.
 
-> Transition Note: Initial Member Count 📝
+With our shift from Gitter to Zulip, it's worth mentioning that the majority of
+discussions on Zulip have involved the core developers of Zarr. Now, we're
+extending our warm invitation to the wider community to join us on Zulip. Your
+involvement is crucial as we foster a more inclusive and vibrant community.
 
-Please note that during our transition from Gitter to Zulip, new members joining
-the Zulip chat room may observe an initially lower member count compared to
-Gitter. However, we are confident in the growth and vibrancy of our community
-on Zulip and invite all users to join us in this exciting new phase.
+We look forward to connecting with you there! ✌🏻
 
 ~Sanket Verma
 
