@@ -1,6 +1,6 @@
 # Zarr Official Blog
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## Welcome to Zarr Official Blog! 🚀
@@ -63,6 +63,7 @@ Thanks to all these people for contributing. ([emoji-key](https://allcontributor
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/jakirkham"><img src="https://avatars.githubusercontent.com/u/3019665?v=4?s=100" width="100px;" alt="jakirkham"/><br /><sub><b>jakirkham</b></sub></a><br /><a href="#maintenance-jakirkham" title="Maintenance">🚧</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://normanrz.com/"><img src="https://avatars.githubusercontent.com/u/335438?v=4?s=100" width="100px;" alt="Norman Rzepka"/><br /><sub><b>Norman Rzepka</b></sub></a><br /><a href="https://github.com/zarr-developers/blog/pulls?q=is%3Apr+reviewed-by%3Anormanrz" title="Reviewed Pull Requests">👀</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://www.glencoesoftware.com/"><img src="https://avatars.githubusercontent.com/u/487082?v=4?s=100" width="100px;" alt="Chris Allan"/><br /><sub><b>Chris Allan</b></sub></a><br /><a href="https://github.com/zarr-developers/blog/pulls?q=is%3Apr+reviewed-by%3Achris-allan" title="Reviewed Pull Requests">👀</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/d-v-b"><img src="https://avatars.githubusercontent.com/u/3805136?v=4?s=100" width="100px;" alt="Davis Bennett"/><br /><sub><b>Davis Bennett</b></sub></a><br /><a href="https://github.com/zarr-developers/blog/pulls?q=is%3Apr+reviewed-by%3Ad-v-b" title="Reviewed Pull Requests">👀</a></td>
     </tr>
   </tbody>
 </table>
