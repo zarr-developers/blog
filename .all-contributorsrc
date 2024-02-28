@@ -63,6 +63,15 @@
       "contributions": [
         "review"
       ]
+    },
+    {
+      "login": "d-v-b",
+      "name": "Davis Bennett",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3805136?v=4",
+      "profile": "https://github.com/d-v-b",
+      "contributions": [
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
@@ -70,5 +79,6 @@
   "repoType": "github",
   "repoHost": "https://github.com",
   "projectName": "blog",
-  "projectOwner": "zarr-developers"
+  "projectOwner": "zarr-developers",
+  "commitType": "docs"
 }
