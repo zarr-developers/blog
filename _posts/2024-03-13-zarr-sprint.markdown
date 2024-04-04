@@ -44,7 +44,7 @@ Throughout the sprint, the GeoZarr focus group worked on examining the interoper
 
 One of the biggest realizations was that ArcGIS has a lot of existing support for Zarr, which is really exciting news! For other tools, there is still work to be done, especially for GeoTIFF-like data being stored in Zarr, which translates to updates needed within the GeoZarr specification. For example, there are functionality issues tied to support or lack thereof for specific compression algorithms. The GeoZarr Steering Working Group is working on providing a list of supported compressions for commonly used tools. There is also work to be done on specifying the organizational structure of GeoZarr and understanding where requirements from CF diverge from the Zarr data model. For this, we are focusing efforts on involving folks with CF expertise to guide these conversations. 
 
-If you are interested in helping out, please join the next bi-weekly GeoZarr meeting every other Wednesday at 11 EST. The next will be March 20th and you can find the invite on the Zarr calendar or join directly from [this link](https://meet.google.com/jth-rstn-fwb). Check out the notes from past meetings at the [hackmd](https://hackmd.io/@briannapagan/geozarr-spec-swg/edit).
+If you are interested in helping out, please join the next bi-weekly GeoZarr meeting every other Wednesday at 11 EST. The next will be April 17th and you can find the invite on the Zarr calendar or join directly from [this link](https://meet.google.com/jth-rstn-fwb). Check out the notes from past meetings at the [hackmd](https://hackmd.io/@briannapagan/geozarr-spec-swg/edit).
 
 ## HTTP Extension
 
@@ -52,9 +52,9 @@ A final priority of the Zarr Sprint was to get efforts rolling on how to better 
 
 Kevin Booth is the lead on this effort. Currently, he has added some sidecar files with links to reference parent, child, and root relationships in the Zarr to be able to use something like [traverzarr](https://github.com/xaviernogueira/traverzarr), the first attempt at traversing a Zarr JSON as if it were a filesystem in developed by Xavier Nogueira during the sprint, to navigate a Zarr in a manner like the Spatio-Temporal Asset Catalog (STAC). A more detailed blog post with updates on this work to come in the next week.
 
-This work continues to be worked on after the sprint. Cloud-Native Geospatial Foundation has started holding bi-weekly meetings to hack on this work. The next will be held at 12 EST on March 14th. If you would like to be involved in this, email hello@cloudnativegeo.org to be added to the meeting invite, or find the meeting link at the Zarr calendar [here](https://zarr.dev/community-calls/).
+This work continues to be worked on after the sprint. Cloud-Native Geospatial Foundation has started holding bi-weekly meetings to hack on this work. If you would like to be involved in this, email hello@cloudnativegeo.org to be added to the meeting invite, or find the meeting link at the Zarr calendar [here](https://zarr.dev/community-calls/).
 
----
+## More efforts to come! 
 
 It was great to get a group of people together to spend some dedicated time on Zarr, and the work is nowhere near done. Please help keep the momentum of these efforts going by responding to any GitHub Pull Requests, Issues, or Discussions that you have opinions on and joining any of the established Zarr meetings that are of interest to you. Again, the Zarr calendar can be found [here](https://zarr.dev/community-calls/).
 
