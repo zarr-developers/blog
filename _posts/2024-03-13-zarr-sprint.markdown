@@ -1,6 +1,6 @@
 ---
 layout: post
-title = "Zarr Sprint Recap"
+title: "Zarr Sprint Recap"
 description: A summary of what we did at the 2024 Zarr Sprint.
 date: 2024-04-04
 categories: blog
