@@ -72,6 +72,15 @@
       "contributions": [
         "review"
       ]
+    },
+    {
+      "login": "PowerChell",
+      "name": "Michelle Roby",
+      "avatar_url": "https://avatars.githubusercontent.com/u/42818395?v=4",
+      "profile": "https://github.com/PowerChell",
+      "contributions": [
+        "blog"
+      ]
     }
   ],
   "contributorsPerLine": 7,
