@@ -53,3 +53,19 @@ Additionally, the POWER Project plans to include both a spatial and time series 
 POWER plans to use Zarr spatial data stores for ArcGIS image services in future data versions to cater to the needs of the GIS community.
 
 ~ [Zoe Waring](https://www.linkedin.com/in/zoe-waring/), [NASA POWER team](https://power.larc.nasa.gov/docs/team/)
+
+<script src="https://giscus.app/client.js"
+        data-repo="zarr-developers/blog"
+        data-repo-id="R_kgDOGxrWVg"
+        data-category="General"
+        data-category-id="DIC_kwDOGxrWVs4CU5q_"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
