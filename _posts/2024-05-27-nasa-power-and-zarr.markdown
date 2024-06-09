@@ -2,7 +2,7 @@
 layout: post
 title: "NASA POWER 🤝🏻 Zarr"
 description: Blog post on Zarr usage at NASA LARC's POWER project
-date: 2024-05-27
+date: 2024-06-08
 categories: blog
 permalink: /nasa-power-and-zarr/
 ---
