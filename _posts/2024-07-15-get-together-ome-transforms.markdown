@@ -4,7 +4,7 @@ title: "Get Together OME Transforms 🧠"
 description: Join the 3rd Get Your Brain Together Hackathon!
 date: 2024-07-15
 categories: blog
-permalink: /3rd-get-your-brain-together-hackathon-ome-transforms/
+permalink: /get-your-brain-together-hackathon/
 ---
 
 # Join the 3rd Get Your Brain Together Hackathon!
@@ -38,6 +38,8 @@ The hackathon is structured into three key components:
 
 **[Register now and add the event to your calendar!](https://insightsoftwareconsortium.github.io/GetYourBrainTogether/HCK03_2024_UNC_Hybrid/)**
 
+~ [Matt McCormick](https://github.com/thewtex)
+
 [Registration]: https://forms.gle/LL4quQsbSWawKYSa6
 [Register]: https://forms.gle/LL4quQsbSWawKYSa6
 [Get Your Brain Together]:  https://insightsoftwareconsortium.github.io/GetYourBrainTogether/HCK03_2024_UNC_Hybrid/
@@ -46,3 +48,19 @@ The hackathon is structured into three key components:
 [coordinate transformations draft]: https://github.com/ome/ngff/pull/138
 [relevant neuroimaging additions]: https://github.com/ome/ngff/issues/208
 [FAIR]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4792175/
+
+<script src="https://giscus.app/client.js"
+        data-repo="zarr-developers/blog"
+        data-repo-id="R_kgDOGxrWVg"
+        data-category="General"
+        data-category-id="DIC_kwDOGxrWVs4CU5q_"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
