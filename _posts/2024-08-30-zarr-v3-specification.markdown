@@ -14,7 +14,7 @@ versions of Zarr-Python V3; check [here](https://pypi.org/project/zarr/#history)
 With the official release around the corner, there's a lot to look forward to.
 But before we dive headfirst into integrating Zarr-Python V3 into our workflows,
 I want to take a moment to provide an overview of the key changes and enhancements
-we've made in this new version.
+we've made in this new version of specification.
 
 For detailed information and the full specification, please refer to the 
 [Zarr V3 Specification](https://zarr-specs.readthedocs.io/en/latest/v3/core/v3.0.html).
@@ -31,7 +31,7 @@ cloud-native performance, and extensibility.
 ### Enhanced Interoperability 🔁
 
 Zarr V2 was deeply intertwined with the Python ecosystem, particularly relying
-on NumPy for many of its core operations. While this made it highly efficient
+on NumPy for many of its core operations. While this made it highly functional
 for Python users, it also limited its usability across different programming
 languages and environments. With Zarr V3, the specification has evolved towards
 a more language-agnostic approach.
@@ -60,9 +60,9 @@ information about the array, such as its shape, data type, and chunking, while
 required.
 
 Additionally, the structure of the array has been optimized. Chunks are now
-grouped into individual directories based on their size, which minimizes the
-overhead of retrieving data from cloud storage. Here's a visual comparison
-between V2 and V3 arrays:
+grouped into individual directories, which helps streamline data organization
+and retrieval in cloud storage environments, particularly when dealing with a
+large number of chunks. Here's a visual comparison between V2 and V3 arrays:
 
 <p align="center">
  <img src="../assets/images/arrays_v2_v3.png" alt="arrays_v2_v3" width="900">
@@ -94,8 +94,7 @@ Extensions in Zarr V3 allow users to add new features and capabilities without
 altering the core specification. This is particularly important for
 accommodating the evolving needs of different communities. For example, the
 extension mechanism lets users manipulate metadata fields, introduce new data
-types, modify the chunk grid to support irregular chunks, and even add new
-codecs.
+types, add new codecs, modify the chunk grid to support irregular chunks, etc.
 
 One exciting new feature made possible by this extensibility is the [sharding
 codec](https://zarr.dev/zeps/accepted/ZEP0002.html), which enables the grouping
