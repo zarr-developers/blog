@@ -7,7 +7,7 @@ categories: blog
 permalink: /steering-council-update-2024/
 ---
 
-# Steering council membership update"
+# Steering council membership update
 
 From the [Governance documentation](https://github.com/zarr-developers/governance/blob/main/GOVERNANCE.md#zarr-steering-council):
 
