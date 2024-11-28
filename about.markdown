@@ -19,4 +19,4 @@ See the following GitHub repositories for more information:
 - [Zarr.jl](https://github.com/meggart/Zarr.jl)
 - [ndarray.scala](https://github.com/lasersonlab/ndarray.scala)
 
-Find us on [ZulipChat](https://ossci.zulipchat.com/), [Twitter](https://twitter.com/zarr_dev) and [GitHub](https://github.com/zarr-developers).
+Find us on [ZulipChat](https://ossci.zulipchat.com/), [Bluesky](https://bsky.app/profile/zarr.dev) and [GitHub](https://github.com/zarr-developers).

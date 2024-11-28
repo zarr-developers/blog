@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Steering council membership update (November 2024)"
+title: "Steering council membership update"
 description: "Please welcome the new steering council member, Norman Rzepka (normanrz)!"
 date: 2024-11-28
 categories: blog
 permalink: /steering-council-update-2024/
 ---
 
-# Steering council membership update (November 2024)
+# Steering council membership update"
 
 From the [Governance documentation](https://github.com/zarr-developers/governance/blob/main/GOVERNANCE.md#zarr-steering-council):
 
