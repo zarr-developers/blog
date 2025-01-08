@@ -2,7 +2,7 @@
 layout: post
 title: "Zarr-Python 3.0 is here!"
 description: Zarr-Python 3.0 is here! This release brings support for Zarr's v3 specification and major performance improvements.
-date: 2024-05-09
+date: 2025-01-09
 categories: blog
 permalink: /zarr-python-v3-release/
 ---
