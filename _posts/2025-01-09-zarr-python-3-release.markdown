@@ -89,13 +89,13 @@ We have done everything possible to make the migration from Zarr-Python 2 to 3 a
 
 Zarr-Python 3.0.0 marks the beginning of a new chapter for the Zarr-Python project. We encourage you to try out this new version and provide feedback. We're also excited to see the development of new extensions built on top of this solid foundation, such as [Icechunk](https://icechunk.io), [Zarrs-Python](https://zarrs-python.readthedocs.io), and [VirtualiZarr](https://virtualizarr.readthedocs.io).
 
-The development of Zarr-Python 3 was a huge effort, spanning over 12 months and including contributions from over 30 contributors. Special thanks to [Davis Bennett](https://github.com/d-v-b) and [Norman Rzepka](https://github.com/normanrz) who helped me kick off the initial refactor in Potsdam, Germany in December 2024.
+The development of Zarr-Python 3 was a huge effort, spanning over 12 months and including contributions from over 30 contributors. Special thanks to [Davis Bennett](https://github.com/d-v-b) and [Norman Rzepka](https://github.com/normanrz) who helped me kick off the initial refactor in Potsdam, Germany in December 2023.
 
 **Further reading**
 
 - [Zarr-Python 3 documentation](https://zarr.readthedocs.io/)
 - [Zarr-Python 3 design doc](https://zarr.readthedocs.io/en/latest/developers/roadmap.html)
-- [Zarr v3 Specification](https://zarr-specs.readthedocs.io/en/latest/v3/core/v3.0.html)
+- [Zarr v3 specification](https://zarr-specs.readthedocs.io/en/latest/v3/core/v3.0.html)
 
 ~Joe Hamman
 
