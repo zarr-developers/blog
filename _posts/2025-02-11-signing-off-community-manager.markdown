@@ -50,8 +50,9 @@ serendipitously led me to take care of several repositories under the Zarr
 banner. At first, I launched the Zarr blog using Jekyll and GitHub page and
 started writing about releases, contributor guides, roadmaps, etc. Then, I
 revamped the Zarr website to add more content and launched another website to
-maintain a record of Zarr community meeting notes and community calendar at <https://zarr.dev/community-calls/>. Over time, I also launched the ZEP
-website, at <https://zarr.dev/zeps/>. While I was solidifying the Zarr online
+maintain a record of Zarr community meeting notes and community calendar at
+(<https://zarr.dev/community-calls/>). Over time, I also launched the ZEP
+website, at (<https://zarr.dev/zeps/>). While I was solidifying the Zarr online
 presence, I was also fixing bugs, assisting in releases, and sending minor
 patches to the Zarr-Python repository. I also ensured that all project licenses
 and the Code of Conduct were current and compliant, reinforcing our commitment
