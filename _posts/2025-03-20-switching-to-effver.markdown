@@ -15,9 +15,13 @@ This post will explain what our old versioning policy was, why it wasn't working
 
 The old Zarr-Python versioning policy was effectively [Semantic Versioning](https://semver.org/), or "SemVer". In this scheme, backwards-incompatible API changes may only be released in major versions, backwards-compatible API changes (i.e., adding new APIs) may only be released in minor or major versions, and bug fixes can be released in major, minor, or patch versions.
 
-But in practice, we found that adherence to SemVer was a source of friction. The impetus for releasing Zarr-Python 3 was to support a new version of the Zarr format. So Zarr-Python 3 was released with a lot of new APIs; some of these APIs have bugs or warts. 
+#### Friction with SemVer
 
-For example, we released some functions that should have consistent default values, but due to this author's error, they don't (I choose to blame the lack of tests!). [The fix](https://github.com/zarr-developers/zarr-python/pull/2819) is simple, in terms of code changes, but it requires breaking changes to our public API. Thus our old versioning policy would require that we ship these fixes in Zarr-Python 4, only a few months after we released 3.
+The impetus for releasing Zarr-Python 3 was to support a new version of the Zarr format. So Zarr-Python 3 was released with a lot of new APIs; some of these APIs have bugs or warts. 
+
+For example, we released some functions that *should* have consistent default values, but due to developer error (this author's error, in fact) those functions are inconsistent. [The fix](https://github.com/zarr-developers/zarr-python/pull/2819) is simple, in terms of code changes, but it requires breaking changes to our public API. According to SemVer, fixing this would require releasing Zarr-Python 4, only a few months after we released 3.
+
+Besides fixing bugs in new APIs, we released Zarr-Python 3 with deprecation notices for many old APIs. We would like to eventually remove these routines from Zarr-Python, but we don't think it would match our user's expectations if we released a new major version of the library just to signify removing code. Again, this is contrary to SemVer.
 
 Our users assume that major releases Zarr-Python will contain sweeping changes, not tiny adjustments to public APIs. So releasing version 4 of Zarr-Python because we changed the default values of a few functions would likely confuse people.
 
