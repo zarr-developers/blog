@@ -25,7 +25,7 @@ Besides fixing bugs in new APIs, we released Zarr-Python 3 with deprecation noti
 
 Our users assume that major releases Zarr-Python will contain sweeping changes, not tiny adjustments to public APIs. So releasing version 4 of Zarr-Python because we changed the default values of a few functions would likely confuse people.
 
-We learned that SemVer does not actually fit our project very well, so we decided to update the versioning policy accordingly. If you are interested in the developer discussion about this topic, see this [Github issue](https://github.com/zarr-developers/zarr-python/issues/2889).
+We learned that SemVer does not actually fit our project very well, so we decided to update the versioning policy accordingly. If you are interested in the developer discussion about this topic, see [Github issue 2889](https://github.com/zarr-developers/zarr-python/issues/2889).
 
 ### Our new versioning policy
 
