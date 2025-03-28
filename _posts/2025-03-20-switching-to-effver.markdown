@@ -7,7 +7,7 @@ categories: blog
 permalink: /versioning-with-effver/
 ---
 
-Back in January we released [Zarr-Python 3](https://zarr.readthedocs.io/en/v3.0.0/), the first new version of the library since 2016. While working on this release, we found that Zarr-Python's versioning policy didn't quite fit the needs of the project as it stands today. So we are modifying that versioning policy to make it better suited to the needs of Zarr-Python developers and users.
+Back in January we released [Zarr-Python 3](https://zarr.readthedocs.io/en/v3.0.0/), the first new major version of the library since 2016. After making this release, we found that Zarr-Python's versioning policy didn't quite fit the needs of the project as it stands today. So we have modified that versioning policy to make it better suited to the needs of Zarr-Python developers and users.
 
 This post will explain what our old versioning policy was, why it wasn't working well for us, and why we are switching to ["Intended Effort Versioning"](https://jacobtomlinson.dev/effver/), or "EffVer".
 
