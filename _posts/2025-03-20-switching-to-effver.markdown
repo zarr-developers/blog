@@ -29,7 +29,7 @@ We learned that SemVer does not actually fit our project very well, so we decide
 
 ### Our new versioning policy
 
-We were accustomed to thinking about major releases of Zarr-Python as epochal events that would offer lots of new functionality to users, but also require substantial changes to existing code. [Jacob Tomlinson](https://jacobtomlinson.dev/) extended this framing to a full versioning scheme, which he calls (<https://jacobtomlinson.dev/effver/>), or "EffVer" for short. 
+We were accustomed to thinking about major releases of Zarr-Python as epochal events that would offer lots of new functionality to users, but also require substantial changes to existing code. [Jacob Tomlinson](https://jacobtomlinson.dev/) extended this framing to a full versioning scheme, which he calls [Intended Effort Versioning](https://jacobtomlinson.dev/effver/), or "EffVer" for short. 
 
 The basic idea of EffVer is that you version your project according to the expected effort a user will spend in upgrading to that version. 
 
