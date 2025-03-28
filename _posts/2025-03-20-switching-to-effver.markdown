@@ -29,15 +29,17 @@ We learned that SemVer does not actually fit our project very well, so we decide
 
 ### Our new versioning policy
 
-We were accustomed to thinking about major releases of Zarr-Python as epochal events that would offer lots of new functionality to users, but also require substantial changes to existing code. [Jacob Tomlinson](https://jacobtomlinson.dev/) extended this framing to a full versioning scheme, which he calls [Intended Effort Versioning](https://jacobtomlinson.dev/effver/), or "EffVer" for short. 
+We were accustomed to thinking about major releases of Zarr-Python as epochal events that offer lots of new functionality to users (like a brand new version of the underlying Zarr format), but also require substantial changes to existing code. In other words, while major releases likely contain backwards-incompatible changes, backwards-incompatible changes on their own don't really warrany a major release.
+
+[Jacob Tomlinson](https://jacobtomlinson.dev/) extended this framing to a full versioning scheme, which he calls [Intended Effort Versioning](https://jacobtomlinson.dev/effver/), or "EffVer" for short. 
 
 The basic idea of EffVer is that you version your project according to the expected effort a user will spend in upgrading to that version. 
 
 - Major releases should contain changes have the most impact on users, and thus require the most effort to adopt.
-- Minor releases can require some effort from some users.
-- Patch releases should require no effort from users.
+- Minor releases can require some adoption effort from some users.
+- Patch releases should require no adoption effort from users.
 
-SemVer indexes changes on whether they are backwards compatible or not. By contrast, EffVer indexes changes on how much effort is required for users to adapt to them. Thus EffVer allows us to ship small-but-breaking changes -- like changing default values of some recently-added functions -- in a minor release, as long as we don't think adapting to these changes will require substantial effort from users. 
+While SemVer indexes code changes by whether they are backwards compatible or not, EffVer indexes changes on how much effort is required for users to adapt to them. Thus EffVer allows us to ship small-but-breaking changes -- like changing default values of some recently-added functions -- in a minor release, so long as we think these changes will be easy for users to integrate.
 
 ### Conclusion
 
