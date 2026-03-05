@@ -58,7 +58,8 @@ Our current governance challenges mostly stem from incomplete disambiguation bet
 4. We are introducing a simple and transparent process for welcoming new Affiliated Software Projects.  
 5. Non-affiliated Software Projects can of course continue to do their own thing however they wish, outside the boundaries of this framework, with whatever governance (or lack thereof) they choose. Non-affiliated projects are not eligible for direct funding via NumFocus. We welcome and encourage all Zarr-related projects to become affiliated.
 
-These changes are formalized as a Zarr Enhancement Proposal ([ZEP-11](https://github.com/zarr-developers/zeps/pull/68)), which will now go through an approval process and receive feedback from the community.
+These changes are formalized as a Zarr Enhancement Proposal ([ZEP-11](https://github.com/zarr-developers/zeps/blob/main/draft/ZEP0011.md)), which will now go through an approval process and receive feedback from the community.
+Feedback should be shared via the [dedicated discussion issue](https://github.com/zarr-developers/zeps/issues/69) in the `zeps` repo.
 
 **The Spec Committee**
 
