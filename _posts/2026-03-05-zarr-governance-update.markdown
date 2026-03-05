@@ -9,6 +9,8 @@ permalink: /governance-update/
 
 # Evolving Zarr’s Governance
 
+Authors: Ryan Abernathey, Alistair Miles, Josh Moore, Norman Rzepka,
+
 In the ten years since its inception, Zarr has transformed the landscape of scientific data management. What started as a side project for a single genomics researcher frustrated with existing storage options has blossomed into critical scientific infrastructure for bioinformatics, bioimaging, geospatial, and Earth-system science. Zarr is in use in production at organizations such as NASA, NOAA, ESA, EMBL-EBI, Allen Institutes, Bi\[o\]hub, RIKEN, NVIDIA, Google, and Microsoft. Zarr was recently chosen as the next-generation format for the Copernicus Sentinel missions, which produce 40 Petabytes of data per year.
 
 The reasons for this widespread adoption fall into two broad categories:
