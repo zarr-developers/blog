@@ -54,7 +54,7 @@ Our current governance challenges mostly stem from incomplete disambiguation bet
 2. The Zarr Specification will be governed by a separate Spec Committee. The Spec Committee’s responsibilities are to  
    1. Manage changes to the Zarr core Specification  
    2. Maintain the list of Zarr Extensions  
-3. Each Affiliated Software Project will be governed independently by a Core Developers Group (GDC) and will adhere to a simple governance process defined in a standardized document (below for more detail), without oversight from the ZSC.  
+3. Each Affiliated Software Project will be governed independently by a Core Developers Group (CDG) and will adhere to a simple governance process defined in a standardized document (below for more detail), without oversight from the ZSC.  
 4. We are introducing a simple and transparent process for welcoming new Affiliated Software Projects.  
 5. Non-affiliated Software Projects can of course continue to do their own thing however they wish, outside the boundaries of this framework, with whatever governance (or lack thereof) they choose. Non-affiliated projects are not eligible for direct funding via NumFocus. We welcome and encourage all Zarr-related projects to become affiliated.
 
@@ -73,7 +73,7 @@ The Spec Committee's primary mandate is to manage the core specification and to 
 
 **Governance for Affiliated Software Projects**
 
-Affiliated Software Projects will now follow a simple, standard, merit-based governance process akin to the Apache model. The default governance for Affiliated Software Projects is spelled out in an accompanying governance document: [Draft: Governance for Zarr Affiliated Software Projects](https://docs.google.com/document/d/1WDl25LgYEcqJZK8qd1AL0qVcXo9O9F8D4jSY13gzCXA/edit?tab=t.0).
+Affiliated Software Projects will now follow a simple, standard, merit-based governance process akin to the Apache model. The default governance for Affiliated Software Projects is spelled out in an accompanying governance document: [Draft: Governance for Zarr Affiliated Software Projects](https://github.com/zarr-developers/governance/pull/52/changes#diff-ff22f45c73526074150d0fd44087e20ee6bfdc7b2b3c45c45ed1e167e7b3ed2e).
 
 This governance initially consists of the following key elements:
 
